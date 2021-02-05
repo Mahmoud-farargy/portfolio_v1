@@ -1,0 +1,62 @@
+*{
+    box-sizing:border-box;
+}
+body{
+    margin:0;
+    overflow-x: hidden !important;
+}
+.css-top-box{
+    flex-wrap:nowrap;
+    white-space:nowrap !important;
+}
+.css-mobile-center{
+    margin: 0 auto ;
+    flex-wrap:nowrap;
+    flex-direction: row;
+    justify-content:center;
+}
+.form input::placeholder, .form textarea::placeholder{
+    color:rgb(238, 237, 237);
+}
+.form input[type='submit']{
+    font-size:20px;
+}
+img{
+        width:100%;
+        height:100%;
+}
+.css-tabs{
+    overflow-x:hidden !important;
+}
+@media only screen and (min-width:960px){
+    .css-mobile-center{
+        justify-content:flex-start;
+    }
+    .port-item{
+        padding: 3em !important;
+    }
+    
+}
+@media only screen and (max-width:600px){
+    .container{
+        margin: 0 !important;
+        padding: 0 !important;
+    }
+    .style-mobile{
+        justify-content: flex-start;
+        text-align: left;
+        
+    }
+    h1{
+        font-size: 2.4em !important;
+    }
+    .mobile-padding{
+        padding:9px !important;
+    }
+    .css-tabs i{
+        font-size:1.6em;
+    }
+    .port-item{
+        padding:15px 3px !important;
+    }
+}

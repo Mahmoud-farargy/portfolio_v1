@@ -1,0 +1,107 @@
+*{
+    box-sizing: border-box;
+}
+body{
+    margin:0;
+}
+/* .mainSummary2 li{
+    border: 1px solid black;
+} */
+.mainSummary2{
+    text-align:center;
+    list-style: none;
+    font-size:26px;
+}
+table{
+    box-shadow: 4px 1px 7px 1px rgba(180, 142, 142, 0.1);
+    border-radius: 5px !important;
+}
+img{
+    width:25px;
+}
+.show-mobile-only{
+    display: none !important;
+}
+.show-desktop{
+    display:ruby-base !important;
+}
+.lightRed{
+    color:rgb(180, 74, 74);
+}
+.searchBtn{
+    margin-top:6px;
+    padding:5px 15px; 
+    border:none;
+    border-radius:15px;
+    background-color:yellow;
+    color:black;
+    transition: background-color 0.4s linear;
+}
+.loading{
+    display:flex;
+    flex-direction: column;
+    justify-content:center;
+    align-items:center;
+    width:80px;
+    height:80px;
+    border-radius: 50%;
+    background:linear-gradient( rgb(82, 141, 14), rgb(238,238,238));
+    animation:spin 0.9s linear infinite;
+    margin:100px auto;
+}
+.loading::after{
+    content: "";
+    text-align:center;
+    display:flex;
+    justify-content: center;
+    align-items:center;
+    width:90%;
+    height:90%;
+    background-color: #eee;
+    border-radius:50%;
+}
+@keyframes spin {
+    0%{
+        transform: rotate(0deg);
+    }
+    50%{
+        transform: rotate(180deg);
+    }
+    100%{
+        transform: rotate(360deg);
+    }
+}
+
+.searchBtn:hover{
+    background-color: rgb(218, 218, 21);
+}
+.area{
+    font-size:23px;
+    font-weight:500;
+}
+@media only screen and (max-width:600px){
+    h2{
+        font-size: 25px !important;
+    }
+    .tbody1{
+        font-size:20px !important;
+    }
+    .area{
+        font-size: 18px;
+    }
+    .tbody2{
+        font-size:16 !important;
+    }
+    .show-mobile-only{
+        display:block !important;
+    }
+    .show-desktop{
+        display: none !important;
+    }
+    nav div ul li{
+    padding: 10px 0;
+    }
+    .list-group{
+        box-shadow: 4px 1.5px 7px 1px rgba(180, 142, 142, 0.1);
+    }
+}

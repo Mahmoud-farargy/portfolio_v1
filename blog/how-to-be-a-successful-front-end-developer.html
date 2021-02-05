@@ -1,0 +1,308 @@
+<!DOCTYPE html>
+<html>
+    <head>                  <!--COPYRIGHT 2020 MAHMOUD FARARGY-->
+        <meta charset="UTF-8">
+        <meta lang="en">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
+        <title>How to be a successful front end developer?</title>
+        <link rel="stylesheet" type="text/css"  href="../style.css">
+        <link href="../google-fonts.css" rel="stylesheet">
+        <meta name="generator" content="Gatbsy 2.22.11">
+        <meta data-react-halmet="true" name="description" content="Mahmoud Farargy">
+        <style data-styled ="active" data-styled-version="5.1.0"></style>
+        <link href="https://fonts.googleapis.com/css2?family=Lobster+Two:ital,wght@1,700&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css" integrity="sha384-oS3vJWv+0UjzBfQzYUhtDYW+Pj2yciDJxpsK1OYPAYjqT085Qq/1cq5FLXAZQ7Ay" crossorigin="anonymous"/>
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+        <link rel="icon" sizes="210x210" href="../latin-english-letter-m-uppercase-512.png">
+        <script src="../jquery3.4.1.js"></script>
+        <script src="../vue.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/vue-resource@1.5.1"></script>
+
+        <script>
+    $(document).ready(()=>{
+        $(".navbar-toggler").click(function(){
+        var expanded = $(".navbar-toggler").attr("class");
+
+        if(expanded.match("collapsed")){
+             $(".navbar-toggler").css("transform","rotate(90deg)");
+             $(".navbar-toggler div").css("background","linear-gradient(90deg, rgb(225,225,255),var(--secondaryClr))");
+        }else{
+            $(".navbar-toggler").css("transform","rotate(0)");
+            $(".navbar-toggler div").css("background","linear-gradient(90deg, var(--secondaryClr), rgb(225,225,255))");
+        }
+       
+        });
+        
+        $(window).on('scroll', function(){
+            if($(window).scrollTop()){
+                $('nav').addClass('black-bcg')
+            }else{
+                $('nav').removeClass('black-bcg');
+            }
+        });   
+
+        //update the copyright year
+        $("#year").text(new Date().getFullYear());
+
+        //scrollspy
+
+        $(".fa-chevron-circle-up").mouseenter(function(){
+            $(".go-up").css("opacity","1").stop().fadeIn(200);
+        });
+        $(".fa-chevron-circle-up").mouseleave(function(){
+            $(".go-up").css("opacity","0.2").fadeOut(200);
+        });
+    });
+   
+   
+
+
+        </script>
+    </head>
+    <body>
+        <div id="app">
+        <header>
+        
+            <nav class="fixed-top navbar navbar-expand-md navbar-dark" id="myNav" style="background-color:black;">
+                <div class="container">
+                        <a href="../index.html" class="up-link"><img class="navbar-brand" alt="logo" src="../latin-english-letter-m-uppercase-512.png" style="width:32px; margin-right:5px !important;"> <span class="text-white" style="font-family: 'Coda+Caption:800', cursive;">Mahmoud Farargy</span> 
+                        </a>
+                        <button class="navbar-toggler" data-toggle="collapse" data-target="#main-nav">
+                            <div class="ham-bar bar1"></div>
+                            <div class="ham-bar bar2"></div>
+                            <div class="ham-bar bar3"></div>
+                        </button>
+                    <div class="collapse navbar-collapse" id="main-nav">
+                        <ul class="navbar-nav ml-auto">
+                            <li class="nav-item"><a class="nav-link text-uppercase" href="../index.html#About">About</a></li>
+                            <li class="nav-item"><a class="nav-link text-uppercase" href="../index.html#skills">Skills</a></li>
+                            <li class="nav-item"><a class="nav-link text-uppercase" href="../index.html#work">Work</a></li>
+                            <li class="nav-item"><a class="nav-link text-uppercase" href="../index.html#contact">Contact</a></li>
+                            <li class="dropdown nav-item">
+                                <a data-toggle="dropdown" class="dropdown-toggle text-uppercase css-btn-nav-config nav-link" style="cursor:pointer;">Certifications</a>
+                                <ul class="dropdown-menu add-box-shadow">
+                                    <li class="dropdown-item"><a href="https://www.freecodecamp.org/certification/farargy/responsive-web-design" target="_blank">Responsive Web Design</a></li>
+                                    <li class="dropdown-item"><a href="https://www.freecodecamp.org/certification/farargy/javascript-algorithms-and-data-structures" target="_blank">JavaScript Algorithms & <br>Data Structures </a></li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </div>
+                </div> 
+            </nav>
+        </header>
+                    <!-- BLOG -->
+        <section class="blog-top" id="blog">
+            <div class="container">
+               
+                <div class="p-2 w-100">
+                    <div class="card" style="border:none !important;">
+                        <h2 style="margin:50px 0px 0px;">How to be become a successful front end developer</h3>
+                        <span class="text-muted">Jun 14, 2020</span>
+                    </div>
+                    
+                    <img src="../Case-Study-IT-1024x683.jpg" class="img-fluid img-responsive article-img">
+                 <article class="pb-5">
+                        Recently, some people approached me asking for advice on how to get started as a front-end developer. With its ever changing technologies and frameworks, it can be quite difficult and overwhelming starting out in the field of front-end development.
+
+                        In this blog post, you can find 10 tips on how to become a front-end developer!
+                        
+                        
+                        If you’re already sure about front-end development, go ahead and read on.
+                        
+                        <h4 class="article-head"> Front-end development skills needed</h4>
+                        When starting out in front-end, you might not be sure where to start. There are so many options available not only programming language-wise, but regarding tools, frameworks, and technologies as well.
+                        
+                        So make sure to be prepared of open sea.
+                        
+                        Or as Ivan would state it:
+                        
+                        <span class="text-center">Front-end development is like an ocean. You happen to have a ship, but no map. First learn the shallow waters, then go deep. </span>
+                        
+                        <h4 class="article-head mt-4"> 1. Learn HTML & CSS. And become good at it. </h4>
+                        I guess there’s no way around it. Learn HTML & CSS. Why? Because the basics matter.
+                        
+                        There are all kinds of different online courses available on how to get started with HTML and CSS. First things first. Sign up at Online courses like Coursera or Team Treehouse. After finishing some initial courses, go ahead and create some static web pages and iterate over and over again.
+                        
+                        I also recommend developing some small UI elements for practicing your newly learned HTML & CSS skills. Codepen.io is a great playground for that. Browse other people’s projects and participate in the community there.
+                        
+                        <h4 class="article-head"> 2. Build things. </h4>
+                        Playing around with (small) UI elements is one thing. Creating an actual landing page or website is something different. At some point, you will eventually start using JavaScript snippets.
+                        
+                        Don’t forget to challenge yourself by building first responsive elements.
+                        
+                        So there’s only one way to becoming better at what you’re doing: Keep learning, keep building.
+                        
+                        Putting these two together, build to learn! There’s no better way to learn than to get your hands dirty. You’ve probably heard this a hundred times by now, but it is for a good reason why this is the advice most often dished out.
+                        
+                        <h4 class="article-head"> 3. Read, read, read </h4>
+                        I guess there’s no way around this. Believe it or not. Your reading skills greatly influence your path to becoming a great front-end developer. Especially when starting out, there’s a lot of reading required. Why?
+                        
+                        At first you’ll probably read a lot of articles, guides and manuals on how to do different things. You’ll also start reading other people’s code.
+                        
+                        Or as Adam (UX Lead at CoachUp) would state:
+                        
+                        Combine that with a good book like Eloquent JavaScript, and you can up your programming game very quickly.
+                        
+                        <h4 class="article-head"> 4. There’s more to front-end development than building a website </h4>
+                        If you followed my tips from 1 to 3, you have probably already done a course or have read a lot of tutorials and are now able to throw together a website.
+                        
+                        However, that doesn’t equate to being a “front-end developer”. Knowing how to build a website is a very small part of the front-end puzzle.
+                        
+                        I apologise if that sounds demotivating. But that’s actually the case.
+                        
+                        There is a whole load of topics that you still should learn about. If we consider performance, testing, QA and many other areas, then you really need to become a deep diver as a front-end developer.
+                        
+                        <h4 class="article-head"> 5. Know your tools </h4>
+                        As you start your journey with front-end development, you will need to decide on your toolkit and the services you need to to make your life easier. Learning about the different tooling options is an important thing. Great tools will help you enhance and automate your front-end development workflow.
+                        
+                        There will be an ocean of possibilities but soon enough, you’ll find yourself using certain tools and apps. One of those tools will definitely be the Chrome developer tools. Why? Because you can play with HTML, CSS and JavaScript in real-time and this will give you the immediate feedback you need to learn quickly.
+                        Additionally, node, npm, bower and many more excellent tools are there to facilitate your daily work. And don’t forget about versioning.
+                        
+                        <h4 class="article-head"> 6. Version control will save your life. </h4>
+                        OK, maybe this sounds a bit too exaggerated. But trust me on that. Version control will save you some sleepless nights.
+                        
+                        Instead of trying something and having it blow up in your face or hitting command+z a trillion times, you can simply trash your branch and roll back to what was working previously.
+                        
+                        So make sure to become an expert at Git.
+                        
+                        It will not only save you countless hours, but it will also give you more confidence to try new things. (Thanks Rob for pointing that out!)
+                        
+                        <h4 class="article-head"> 7. Be the middleman </h4>
+                        As a front-end developer, you need to be aware that you put yourself in some kind of middleman role. As a middleman, you are in touch with QA people, clients, UX experts as well as other developers. You will need to take different perspectives into consideration.
+                        
+                        That is why, besides learning the basics of HTML, CSS and JavaScript, you need to make sure to be able to communicate clearly.
+                        
+                        Or as Kyle stated it:
+                        
+                        Always keep in my what good UX is not only from a user’s perspective, but also from other developers perspective.
+                        
+                        <h4 class="article-head"> 8. Do not rush. </h4>
+                        Along the way, you will ask yourself why you do this and you may want to just stop. It may be tempting to just give up. But don’t. If you’re at that point, I have only one advice for you:
+                        
+                        Do. not. give. up.
+                        
+                        Set aside one or two hours every other day to learn. Take a lot of breaks and make sure that you really know the basics. And never rush.
+                        
+                        The basics form the foundation which will help you get to the next level.
+                        
+                        If you feel stuck, don’t be afraid to ask questions. Everyone goes through this phase and having the patience to stick it out will help you come out in the end as a pro in front-end development.
+                        
+                        <h4 class="article-head"> 9. Dive deep into frameworks </h4>
+                        So, you made it until here. Awesome!
+                        
+                        Now it’s time to get involved with certain frameworks. Start by looking at the more popular ones and work out for yourself why they do things in a certain way.
+                        
+                        Figure out whether each one is a good thing. Understand how frameworks and industry standards have changed over the last couple of years. Looking at older frameworks, you will probably discover approaches and code which are now obsolete.
+                        
+                        Do not forget: Sometimes, using a framework isn’t the best option, but most of the time it’s well worth knowing about them.
+                        
+                        Thanks for the tip Robbie!
+                        
+                        <h4 class="article-head"> 10. Get involved with open source projects </h4>
+                        Contribute to FOSS on GitHub. Don’t shy away from big frameworks that seem well established. Even framework authors make mistakes.
+                        
+                        You may be spending most of your time reading code but don’t see it as a waste of time.
+                        
+                        You will pick up good habits and practices along the way and will gain some experience working with other developers. When you feel ready to write some code, go through issues on the repository and pick one problem which is manageable for you.
+                        
+                        Getting involved with various projects, especially open source, will not only make you a better front-end developer, but it will also help you build up your very own online brand as an active, experienced developer.
+                        
+                        <h4 class="article-head"> Wrapping it up. </h4>
+                        The path to becoming a front-end developer will definitely take some time. As presented in this blog post, becoming a front-end developer is not only about learning various front-end frameworks and programming languages. It’s about the interaction, responsibilities and roles as a front-end developer.
+                        
+                        Because the web is a rapidly evolving universe, great front-end developers should never stop learning. Even little things like following front-end experts on twitter will have impact on your learning curve.
+                        
+                        You need to have some patience to get there. Rushing doesn’t make sense because it won’t make you happy. Never forget to have fun while learning and experimenting.
+                 </article>
+                    <div class="feedback pt-4 pb-5">
+                        <hr />
+                        <transition name="fade" mode="out-in">
+                            <div v-if="!showfeedbackMessage">
+                                <h5  class="text-center my-3">Did you like this article?</h5>
+                                <div class="feedback-emojis">
+                                    <label><img @click="increaseBad" src="https://s.w.org/images/core/emoji/12.0.0-1/svg/1f621.svg"> <label>
+                                    <label><img @click="increaseNotBad" src="https://s.w.org/images/core/emoji/12.0.0-1/svg/1f614.svg"></label>
+                                    <label><img @click="increaseGood" src="https://s.w.org/images/core/emoji/12.0.0-1/svg/1f610.svg"></label>
+                                    <label><img @click="increaseVeryGood" src="https://s.w.org/images/core/emoji/12.0.0-1/svg/1f642.svg"></label>
+                                    <label><img @click="increaseImpressive" src="https://s.w.org/images/core/emoji/12.0.0-1/svg/1f60d.svg"></label>
+                                </div>
+                            </div>
+                        <transition>
+
+                            <h6 v-if="showfeedbackMessage" class="text-center">{{feedbackMessage}}</h6>
+                        <hr/>
+                    </div>
+                </div>
+            </div>
+                
+        </section>
+                    
+        <footer>
+                <ul>
+                    
+                    <li><a class="codep" title="Codepen" href="https://codepen.io/mahmoud-farargy/pens/public" target="_blank"><i class="fab fa-codepen"></i></a></li>
+                    <li><a class="spoti" title="spotify" href="https://app.netlify.com/teams/mahmoud-farargy/sites" target="_blank"><i class="fab fa-spotify"></i></a></li>
+                    <li><a class="insta" title="Instagram" href="https://www.instagram.com/codestein2/" target="_blank"><i class="fab fa-instagram"></i></a></li>
+                    <li><a class="fcc"  title="FreeCodeCamp" href="https://www.freecodecamp.org/farargy" target="_blank"><i class="fab fa-free-code-camp"></i></a></li>
+                    <li><a class="git" title="Github" href="http://github.com/Mahmoud-farargy" target="_blank"><i class="fab fa-github"></i></a></li>
+                </ul>
+                <a href="#blog"><img src="../images/rocket12.png" class="fa-chevron-circle-up"></a>
+                <div style="height:30px;">
+                    <p class="go-up">Beam me up, Scooty!</p>
+                </div>
+                <p class="copyright" style="color:#aaa; font-family:JetBrains Mono Regular;" > &copy; <span id="year"></span> designed & created by Mahmoud Farargy.</p>
+                <!-- <p style="text-align:center; color: #aaa; font-size:14px !important;">Design inspired by Brittany Chiang</p> -->
+            </footer>
+        <script>
+            new Vue({
+                el: "#blog",
+                data:{
+                    feedback:{
+                        bad: 0,
+                        notBad: 0,
+                        good: 0,
+                        veryGood:0,
+                        impressive: 0
+                    },
+                    feedbackMessage: "Thanks for your feedback!",
+                    showfeedbackMessage: false
+                },
+                methods:{
+                    increaseBad(){
+                        this.feedback.bad ++;
+                        this.showfeedbackMessage = true;
+                        console.log(this.feedback.bad);
+                        this.$http.post("https://mahmoudvue.firebaseio.com/blog-feedback.json", this.feedback)
+                        .then(response =>{
+                            return response.json();
+                        }).then(data=>{
+                            console.log(data);
+                        });
+                    },
+                    increaseNotBad(){
+                        this.feedback.bad ++;
+                        this.showfeedbackMessage = true;
+                    },
+                    increaseGood(){
+                        this.feedback.bad ++;
+                        this.showfeedbackMessage = true;
+                    },
+                    increaseVeryGood(){
+                        this.feedback.veryGood ++;
+                        this.showfeedbackMessage = true;
+                    },
+                    increaseImpressive(){
+                        this.feedback.impressive ++;
+                        this.showfeedbackMessage = true;
+                    }
+                }
+            })
+        </script>
+    </script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49"
+    crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js" integrity="sha384-smHYKdLADwkXOn1EmN1qk/HfnUcbVRZyYmZ4qpPea6sjB/pTJ0euyQp0Mk8ck+5T"
+    crossorigin="anonymous"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    </body>
+</html>

@@ -1,0 +1,304 @@
+*{
+    box-sizing: border-box;
+    text-transform: uppercase;
+}
+body{
+    margin:0;
+    position: relative;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+html, body{
+    height: 93%;
+    background: linear-gradient(rgba(0,0,0, 0.4),rgba(0,0,0,0.4)), url(game-background1.jpg);
+    background-repeat:repeat-y;
+    background-size:cover;
+    background-position:center;
+    color:white;
+    background-attachment: fixed;
+}
+.main{
+    padding-bottom: 100px;
+}
+.main-section{
+    width:70%;
+    margin: 0 auto;
+    height:auto;
+    min-height: 100%;
+}
+.players{
+    display:flex;
+    flex-direction: row;
+    height: auto;
+    justify-content:space-between;
+    margin:0 auto;
+    padding: 20px;
+    width: 90%;
+    height:100px;
+}
+.you, .monster{
+    text-align:center;
+    display:flex;
+    flex-direction:column;
+    width:45%;
+    font-size: 1.7rem;
+}
+.you{
+    margin-right:50px;
+}
+.progress{
+    background-color: #ccc;
+    width:100%;
+    height:35px;
+    border-radius:7px;
+    white-space: nowrap;
+}
+.progress-bar-you,.progress-bar-monster{
+    background-color: rgb(72, 153, 72);
+    height:100%;
+    color:white; border-radius:7px;
+}
+
+.buttons-section{
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    margin-top:100px;
+    height:100px;
+    width:100%;
+    box-shadow: 1px 1px 5px 1px rgba(97, 97, 97, 0.7);
+    border-radius: 7px;
+    background-color: rgba(0,0,0,0.5);
+}
+
+.status-section{
+    margin-top:35px;
+    height:140px;
+    width:100%;
+    box-shadow: 1px 1px 2px 2px rgba(97, 97, 97, 0.7);
+    padding:10px 60px 20px 60px;
+    border-radius: 7px;
+    overflow: scroll;
+    background-color: rgba(0,0,0,0.5);
+}
+.score-board{
+    background-color: rgba(0,0,0,0.5);
+    padding: 7px 0 7px 7px;
+    max-width: 140px;
+}
+.status-section ul{
+    list-style: none;
+    text-align:center;
+    font-size: 19px;
+}
+.status-section ul li:nth-child(even){
+    background-color: rgb(196, 196, 224);
+    margin: 5px 0;
+    color: blue;
+}
+.status-section ul li:nth-child(odd){
+    background-color: rgb(241, 189, 187);
+    color:rgb(231, 35, 35);
+}
+.btn{
+    padding:8px;
+    font-size:19px;
+    box-shadow: 0 1px 2px rgba(0,0,0,0.8);
+    border:none;
+    border-radius: 2px;
+}
+.start-game-btn{
+    background-color: #b5fbb9;
+}
+.start-game-btn:hover{
+    background-color:#76ff7e;
+    cursor:pointer;
+}
+.attack-style{
+    background-color: #ff7367;
+    margin-right: 25px;
+}
+.attack-style:hover{
+    background-color: #ff3f43;
+    cursor:pointer;
+}
+.spc-attack-style{
+    background-color: #ffaf4f;
+    margin-right: 25px;
+}
+.cover{
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    margin:0 auto;
+    width:400px;
+}
+.disabled{
+    cursor:not-allowed !important;
+    color:rgb(10, 10, 10) !important;
+    opacity:0.5;
+}
+.spc-attack-style:hover{
+    background-color: #ff9a2b;
+    cursor:pointer;
+}
+.heal-style{
+    background-color: #aaffb0;
+    margin-right: 25px;
+}
+.heal-style:hover{
+    background-color:#76ff7e;
+    cursor:pointer;
+}
+.give-up-style{
+    background-color: #ffffff;
+}
+.give-up-style:hover{
+    background-color: #c7c7c7;
+    cursor:pointer;
+}
+footer{
+    text-align:center;
+    padding: 20px;
+}
+.images{
+    margin-right: 35px;
+    display:flex;
+    justify-content: center;
+    background-color: rgba(252, 250, 250, 0.5);
+}
+.images img{
+    width: 50px;
+    animation: fadeImg 2s;
+}
+.result{
+    display:flex;
+    justify-content:center;
+    align-items:center; 
+    padding: 10px;
+}
+#winImg, #loseImg{
+    background-color: rgba(231, 230, 230, 0.5);
+    padding: 10px;
+    margin-top:30px;
+    width: 130px;
+}
+.title{
+    text-align: center;
+    font-family: 'Spicy Rice', cursive;
+}
+@keyframes fadeImg{
+    from{
+        opacity:1;
+    }
+    to{
+        opacity:0;
+    }
+}
+.btn-size{
+    width:28px;
+    margin-right: 8px;
+    margin-bottom: -8px;
+}
+.monster-player-img-size{
+    width:50px;
+    margin-right:5px;
+    margin-bottom: -8px;
+}
+
+
+@media only screen and (max-width: 800px){
+    html, body{
+        height: 100%;
+    }
+    .main-section{
+        width:97%;
+        
+    }
+    .main{
+        margin-top:7px;
+    }
+    .buttons-section{
+        flex-direction: column;
+        padding:7px 10px;
+        height: auto;
+        margin-top:20px;
+    }
+    .heal-style, .spc-attack-style, .attack-style, .give-up-style{
+        margin:9px; 
+    }
+    .you{
+        margin-right:4px;
+        margin-bottom:-8px;
+    }
+    .status-section{
+        display:flex;
+        justify-content: start;
+        margin-top:10px;
+        padding:2px;
+    }
+    .status-section ul{
+        font-size: 16px;
+        text-align:start;
+    }
+    .status-section ul li{
+        padding:3px;
+    }
+    .players{
+        flex-direction: column;
+        height:auto;
+        justify-content: center;
+        align-items: center;
+        width:56%;
+        padding: 3px;
+        margin-top:-20px;
+    }
+    .you, .monster{
+        font-size: 1.1rem;
+        width:100%;
+        
+    }
+    .progress{
+        margin-top: -15px;
+        height:24px;
+    }
+    .images{
+        height:40px;
+        margin:15px 0;
+        display:flex;
+        justify-content: center;
+        align-items:center;
+    }
+    .images img{
+        width: 30px;
+    }
+    .monster{
+        margin-top:-40px;
+        white-space: nowrap;
+        flex-wrap: nowrap;
+        text-align:right;
+    }
+    .monster .progress{
+        text-align:center;
+    }
+    .cover{
+        justify-content: flex-start;
+        margin:0 8px;
+        width:300px;
+    }
+    .mobile{
+        display:flex;
+        flex-direction:row;
+        column-gap:0px;
+    }
+    .btn{
+        width:100%;
+    }
+    .startBtn{
+        padding:10px;
+    }
+    .score-board{
+        width: 150px;
+        max-height: auto;
+    }
+
+}

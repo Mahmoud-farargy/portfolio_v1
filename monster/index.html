@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="vue.js"></script>
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link href="https://fonts.googleapis.com/css2?family=Ranga&family=Spicy+Rice&display=swap" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css" integrity="sha384-oS3vJWv+0UjzBfQzYUhtDYW+Pj2yciDJxpsK1OYPAYjqT085Qq/1cq5FLXAZQ7Ay" crossorigin="anonymous"/>
+
+    <title>The Monster Slayer</title>
+    
+</head>
+<body>
+<section class="main-section" id="app">
+<div class="main">
+    <div class="mobile">
+    <div v-show="!mainBtn" class="score-board">
+        <p>Rounds: ({{gameMainRounds}}/ 3)</p> <span v-if="bonusRound"><h6>Bonus Round +</h6></span>
+        <p><span><i class="fas fa-heart fa-sm"></i></span> player: {{playerRoundsLeft}} </p>
+        <p><span><i class="fas fa-heart fa-sm"></i></span> Monster: {{monsterRoundsLeft}}</p>
+    </div>
+    <div v-if="mainBtn">
+        <h2 class="title">The monster Slayer</h2>
+        <img class="cover" src="gameCover.png">
+    </div>
+    <div class="players" v-if="!mainBtn">
+        <div class="you">
+            <h1><span><img class="monster-player-img-size" src="player.png"></span> YOU</h1>
+            <div class="progress"><div :style="[barYou,{transition: 'all 0.6s ease-in'}]" class="progress-bar-you">{{barYouWidth}} %</div></div>
+        </div>
+        <div class="images">
+            <img v-if="attackImg" src="attack.png" alt="attack">
+            <img v-if="specAttackImg" src="special_attack.png" alt="special_attack">
+            <img v-if="healImg" src="heal.png" alt="Heal">
+        </div>
+        <div class="monster">
+                <h1><span><img class="monster-player-img-size" src="Monster.png"></span>Monster</h1>
+                <div class="progress"><div :style="[barMonster,{transition: 'all 0.6s ease-in'}]" class="progress-bar-monster">{{barMonsterWidth}} %</div></div>
+            </div>
+    </div>
+    </div>
+
+    <div class="buttons-section">
+        <div class="startBtn" v-show="mainBtn">
+            <button class="btn start-game-btn" @click="dashboard = !dashboard, mainBtn = !mainBtn">Start new game</button>
+        </div>
+        
+        <template v-if="dashboard">
+            <button @click="attack()" class="btn attack-style"><span><img class="btn-size" src="attackBtn.png"></span>Attack</button>
+            <button @click="specAttack()" class="btn spc-attack-style" :class="{disabled: attachDisabledForAttack}"><span><img class="btn-size" src="specialAttackBtn.webp"></span>Special Attack ({{specAttackCount}})</button>
+            <button @click="heal()" class="btn heal-style" :class="{disabled: attachDisabledForHeal}"><span><img class="btn-size" src="healBtn2.png"></span>Heal ({{healCount}})</button>
+            <button @click="giveUp()"class="btn give-up-style"><span><img class="btn-size" src="surrenderBtn.png"></span>Give up</button>
+        </template>
+    </div>
+
+    <div class="result">
+        <img v-if="winner" v-show="mainBtn" id="winImg" src="win-medal.png" alt="win">
+        <img v-if="loser" v-show="mainBtn" id="loseImg" src="lose.png" alt="lose">
+        <h4 v-if=loser v-show="mainBtn"> Game Over</h4>
+        
+    </div>
+    
+    <div v-if="status" class="status-section">
+        <ul>
+            <li v-for="update in statusList">{{update}}</li>
+        </ul>
+    </div>
+</div>
+</section>
+<footer>
+    <p>&copy; 2020 Mahmoud Farargy</p>
+</footer>
+    <script src="script.js"></script>
+</body>
+</html>

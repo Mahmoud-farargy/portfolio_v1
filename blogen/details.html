@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <title>Blogen</title>
+</head>
+<body data-spy="scroll">
+                    <!-- Navbar -->
+    <header>
+        <nav class="navbar navbar-expand-md navbar-dark bg-dark p-0" id="main-nav">
+            <div class="container">
+                <a class="navbar-brand font-weight-bold" href="index.html">Blogen</a>
+                <a class="navbar-toggler btn" data-toggle="collapse" data-target="#myNav">
+                    <span class="navbar-toggler-icon"></span>
+                </a>
+                <div class="collapse navbar-collapse" id="myNav">
+                    <ul class="navbar-nav mr-auto">
+                        <li class="nav-item"><a class="nav-link" href="index.html">Dashboard</a></li>
+                        <li class="nav-item"><a class="nav-link" href="posts.html">Posts</a></li>
+                        <li class="nav-item"><a class="nav-link" href="categories.html">Categories</a></li>
+                        <li class="nav-item"><a class="nav-link" href="users.html">Users</a></li>
+                    </ul>
+                    <ul class="navbar-nav ml-auto">
+                        <li class="nav-item dropdown mr-3">
+                                <a class="dropdown-toggle nav-link" data-toggle="dropdown"><i class="fas fa-user fa-md mr-1"></i>Welcome <span id="userName"></span></a>
+                                <ul class="dropdown-menu mt-0">
+                                    <li class="dropdown-item"><a href="profile.html"style="color:#000;"><i class="fas fa-user-circle mr-3"style="color:#000;"></i>Profile</a></li>
+                                    <li class="dropdown-item"><a href="settings.html"style="color:#000;"><i class="fas fa-cog mr-3" style="color:#000;"></i>Settings</a></li>
+                                </ul>
+                        </li>
+                        <li class="nav-item"><a class="nav-link" href="login.html"><i class="fas fa-user-times fa-md mr-1"></i>Logout</a></li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+                    
+    <div class="bg-primary">
+        <div class="container py-2">
+                <h1 class="text-white">Post One</h1>
+        </div>
+           
+    </div>
+
+    <div class='bg-light'>
+        <div class="container py-4">
+            <div class="row">
+                <div class="col-md-3">
+                    <a href="index.html" class="btn btn-block btn-light mb-2"><i class="fas fa-arrow-left mr-2"></i>Back To Dashboard</a>       
+                </div>
+                <div class="col-md-3 mb-2">
+                    <a class="btn btn-success btn-block" href="index.html"><i class="fas fa-check mr-2"></i>Save Changes</a>
+                </div>
+                <div class="col-md-3 mb-2">
+                    <a class="btn btn-danger btn-block" href="index.html"><i class="fas fa-trash mr-2"></i>Delete Post</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <section>
+        <div class="container mt-4 mb-5 ">
+            <div class="row">
+                <div class="col">
+                    <div class="card">
+                        <div class="card-header bg-light">
+                            <h4 class="card-title">Edit Post</h4>
+                        </div>
+                        <div class="card-body">
+                            <form>
+                                <div class="form-group">
+                                    <label for="title">Title</label>
+                                    <input class="form-control" type="text" id="title" value="Post One">
+                                </div>
+                                <div class="form-group">
+                                <label for="category">Category</label><br>
+                                <select class="form-control" id="category">
+                                    <option selected>Web Development</option>
+                                    <option>Tech Gadget</option>
+                                    <option>Business</option>
+                                    <option>Health & Wellness</option>
+                                </select>
+                                </div>
+                                <div class="form-group">
+                                    <label for="image">Upload Image</label>
+                                        <div class="custom-file">
+                                        <label class="custom-file-label">Choose File</label>
+                                        <input class="custom-file-input" type="file" id="image">
+                                        </div>
+                                    <small class="text-muted">Max Size 3MB</small>
+                                </div>
+                                
+                                <label for="message">Body</label>
+                                <textarea name="editor2" id="message" class="form-control">Lorem ipsum dolor sit amet consectetur adipisicing elit. Libero ipsam labore esse aliquam nobis quasi, eaque dolorum? Obcaecati eos molestias recusandae unde, adipisci, labore nostrum corporis dolore, libero qui modi temporibus sunt quasi maxime facere enim ex ab id! Velit magni accusantium commodi culpa, delectus perferendis possimus error blanditiis veritatis!</textarea> 
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+                <!-- Footer -->
+
+<footer class="bg-dark py-5">
+        <div class="container text-white text-center">
+            <h6>Copyright &copy; <span class="year"></span> Mahmoud Farargy</h6>
+        </div>
+    </footer>
+
+                    <!-- Scripts -->
+  <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
+  crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49"
+      crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js" integrity="sha384-smHYKdLADwkXOn1EmN1qk/HfnUcbVRZyYmZ4qpPea6sjB/pTJ0euyQp0Mk8ck+5T"
+      crossorigin="anonymous"></script>
+  <script src="https://cdn.ckeditor.com/4.9.2/standard/ckeditor.js"></script>
+
+  <script>
+      $(".year").html(new Date().getFullYear());
+
+      $("#userName").html("Mahmoud");
+
+      CKEDITOR.replace("editor2");
+  </script>
+</body>
+</html>

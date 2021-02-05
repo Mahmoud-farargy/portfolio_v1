@@ -1,0 +1,315 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" type="text/css" href="bootstrap.css">
+    <link rel="stylesheet" type="text/css" href="bootstrap-grid.css">
+    <link rel="stylesheet" type="text/css" href="bootstrap-reboot.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
+    <script src="jquery3.4.1.js"></script>
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <link rel="stylesheet" href="ekko-lightbox-css.css">
+    <title>Portfoliogrid</title>
+</head>
+<body>
+    <section>
+        <div class="container">
+            <div class="row no-gutters">
+                <div class="col-lg-4 col-md-5">
+                    <img src="img/person1.jpg" alt="person1">
+                </div>
+                <div class="col-lg-8 col-md-7">
+                    <div class="p-5 bg-dark text-white mobile-padding">
+                        <div class="style-mobile d-flex flex-row align-items-center css-top-box justify-content-between align-items-center">
+                            <h1 class="display-4 mr-2">John Doe</h1>
+                            <ul class="d-flex list-unstyled align-items-center ml-auto css-mobile-center row w-100 ">
+                                <li class="col-md-2"><a href="#" class="text-white"><i class="fab fa-twitter"></i></a></li>
+                                <li class="col-md-2"><a href="#" class="text-white"><i class="fab fa-facebook"></i></a></li>
+                                <li class="col-md-2"><a href="#" class="text-white"><i class="fab fa-instagram"></i></a></li>
+                                <li class="col-md-2"><a href="#" class="text-white"><i class="fab fa-github"></i></a></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="text-white" style="background-color:#000;">
+                        <div class="p-4">
+                            <h6 class="lead">Experienced Full Stack Web Developer</h6>
+                        </div>
+                    </div>
+                    <div class="container">
+                        <div class="row d-flex flex-row align-items-stretch css-tabs" style="flex-wrap:nowrap !important;">
+                            <a class="port-item bg-primary p-4 d-block" data-toggle="collapse" data-target="#homeSection" aria-expanded="true" style=" width:25%; cursor: pointer;">
+                                <div class=" text-center text-white">
+                                    <i class="fas fa-home fa-2x mb-2 d-block"></i>
+                                    <h6 class="font-size: 16px;">Home</h6>
+                                </div>
+                            </a>
+
+                            <a class="port-item bg-success p-4 d-block" data-toggle="collapse" data-target="#resumeSection" aria-expanded="true" style="width:25%; cursor: pointer;">
+                                    <div class="text-center text-white">
+                                        <i class="fas fa-graduation-cap mb-1 fa-2x"></i>
+                                        <h6 class="font-size: 16px;">Resume</h6>
+                                    </div>
+                            </a>
+
+                            <a class="port-item bg-warning p-4 d-block " style="width:25%; cursor: pointer;" data-toggle="collapse" data-target="#workSection">
+                                    <div class="text-center text-white" >
+                                        <i class="fas fa-folder-open fa-2x"></i>
+                                        <h6 class="font-size: 16px;">Work</h6>
+                                    </div>
+                            </a>
+                            
+                            <a class="port-item bg-danger p-4 d-block" style="width:25%; cursor: pointer;" data-toggle="collapse" data-target="#contactSection">
+                                    <div class="text-center text-white">
+                                        <i class="fas fa-envelope fa-2x"></i>
+                                        <h6 class="font-size: 16px;">Contact</h6>
+                                    </div>
+                            </a>
+                        </div>
+                    </div>
+                    
+                </div>
+            </div>
+
+
+                <!-- HOME -->
+        <div class="collapse show" id="homeSection">
+            <div class="card bg-primary text-white py-4">
+                <div class="card-body">
+                    <h2>Welcome To My Page</h2>
+                    <p class="lead">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Nihil, ut!</p>
+                </div>
+            </div>
+            <div class="card">
+                <div class="card-body py-5">
+                    <h3>My Skills</h3>
+                    <p class="pb-2">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Delectus ea excepturi officia quisquam atque eos.</p>
+                    <hr>
+                    <div class="mb-3">
+                        <h4>HTML5</h4>
+                        <div class="progress">
+                            <div class="progress-bar bg-success w-100"></div>
+                        </div>
+                    </div>
+                    <div class="mb-3">
+                        <h4>CSS3</h4>
+                        <div class="progress">
+                            <div class="progress-bar bg-success w-100"></div>
+                        </div>
+                    </div>
+                    <div class="mb-3">
+                        <h4>JavaScript</h4>
+                        <div class="progress">
+                            <div class="progress-bar bg-success w-75"></div>
+                        </div>
+                    </div>
+                    <div class="mb-3">
+                        <h4>PHP</h4>
+                        <div class="progress">
+                            <div class="progress-bar bg-success" style="width:70%"></div>
+                        </div>
+                    </div>
+                    <div class="mb-3">
+                        <h4>Python</h4>
+                        <div class="progress">
+                            <div class="progress-bar bg-success" style="width:60%;"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+            <!--Resume-->
+        <div class="collapse" id="resumeSection">
+            <div class="card bg-success py-5">
+                <div class="card-body text-white">
+                    <h2>My Resume</h2>
+                    <h6 class="lead">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Nihil, ut!</h6>
+                </div>
+            </div>
+            <div class="card">
+                <div class="card-body">
+                    <h3>Where Have I Worked?</h3>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloremque similique saepe inventore rem vitae esse.</p>
+                    <div class="row w-100 mb-3">
+                        <div class="col-lg-4 my-3 bordered">
+                            <div class="card w-100">
+                                <div class="card-body">
+                                    <h4>Devmasters</h4>
+                                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolor, magnam.</p>
+                                    <div class="d-block bg-dark text-white px-1"><p>Position: Full Stack Developer</p></div>
+                                    <div class="d-block bg-dark text-white px-1"><p>Phone: (444) 444-4444</p></div>
+                                </div>
+                                <div class="card-footer">
+                                    <h6>Dates: 2015 - 2018</h6>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class=" col-lg-4 my-3 bordered">
+                                <div class="card">
+                                        <div class="card-body">
+                                            <h4>123 Designs</h4>
+                                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolor, magnam.</p>
+                                            <div class="d-block bg-dark text-white mx-1 px-2"><p>Position: Web Designer</p></div>
+                                            <div class="d-block bg-dark text-white mx-1 px-2"><p>Phone: (222) 222-2222</p></div>
+                                        </div>
+                                        <div class="card-footer">
+                                            <h6>Dates: 2013 - 2015</h6>
+                                        </div>
+                                </div>
+                        </div>
+                        
+                        <div class="col-md-4 my-3 bordered">
+                            <div class="card">
+                                    <div class="card-body">
+                                        <h4>Web Designer Pros</h4>
+                                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolor, magnam.</p>
+                                        <div class="d-block bg-dark text-white mx-1 px-2"><p>Position: Web Designer</p></div>
+                                        <div class="d-block bg-dark text-white mx-1 px-2"><p>Phone: (333) 333-3333</p></div>
+                                    </div>
+                                    <div class="card-footer">
+                                        <h6>Dates: 2010 - 2013</h6>
+                                    </div>
+                            </div>
+                        </div>
+                            
+                    </div>
+                
+                </div>
+            </div>
+        </div>
+
+
+        <!-- Work -->
+        <div class="collapse" id="workSection">
+            <div class="card bg-warning py-5">
+                <div class="card-body text-white">
+                    <h2>My Work</h2>
+                    <p class="lead">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Nihil, ut!</p>
+                </div>
+            </div>
+            <div class="card">
+                <div class="card-body">
+                   <h2>What I have built?</h2>
+                   <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Laborum nostrum repudiandae debitis, nam iste amet.</p>
+                    <div class="row no-gutters mb-4">
+                        <a class="col-lg-3" href="https://unsplash.it/1200/768.jpg?image=251" data-toggle="lightbox">
+                            <img class="img-fluid img-responsive" src="https://unsplash.it/600.jpg?image=251" alt="">
+                        </a>
+                        <a class="col-lg-3" href="https://unsplash.it/1200/768.jpg?image=252" data-toggle="lightbox">
+                            <img class="img-fluid img-responsive" src="https://unsplash.it/600.jpg?image=252" alt="">
+                        </a>
+                        <a class="col-lg-3" href="https://unsplash.it/1200/768.jpg?image=253" data-toggle="lightbox">
+                            <img class="img-fluid img-responsive" src="https://unsplash.it/600.jpg?image=253" alt="">
+                        </a>
+                        <a class="col-lg-3" href="https://unsplash.it/1200/768.jpg?image=254" data-toggle="lightbox">
+                            <img class="img-fluid img-responsive" src="https://unsplash.it/600.jpg?image=254" alt="">
+                        </a>
+                        <a class="col-lg-3" href="https://unsplash.it/1200/768.jpg?image=255" data-toggle="lightbox">
+                            <img class="img-fluid img-responsive" src="https://unsplash.it/600.jpg?image=255" alt="">
+                        </a>
+                        <a class="col-lg-3"href="https://unsplash.it/1200/768.jpg?image=256" data-toggle="lightbox">
+                            <img class="img-fluid img-responsive" src="https://unsplash.it/600.jpg?image=256" alt="">
+                        </a>
+                        <a class="col-lg-3" href="https://unsplash.it/1200/768.jpg?image=257" data-toggle="lightbox">
+                            <img class="img-fluid img-responsive" src="https://unsplash.it/600.jpg?image=257" alt="">
+                        </a>
+                        <a class="col-lg-3" href="https://unsplash.it/1200/768.jpg?image=258" data-toggle="lightbox">
+                            <img class="img-fluid img-responsive" src="https://unsplash.it/600.jpg?image=258" alt="">
+                        </a>
+                    </div> 
+                </div>
+                
+            </div>
+        </div>
+
+            <!--Contact-->
+        <div class="collapse" id="contactSection">
+            <div class="card bg-danger py-4">
+                <div class="card-body text-white">
+                    <h2>Contact</h2>
+                    <p class="lead">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Nihil, ut!</p>
+                </div>
+            </div>
+
+            <div class="card">
+                <div class="card-body pb-2 pt-5">
+                    <h2>Get In Touch</h2>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Error quos illo, dicta id voluptates enim.</p>
+
+                <form class="mb-5 form">
+                    <div class="form-group my-2">
+                        <div class="input-group input-group-lg">
+                            <div class="input-group-prepend">
+                                <span class="input-group-text bg-danger text-white">
+                                    <i class="fas fa-user"></i>
+                                </span>
+                            </div>
+                            <input autofocus type="text" class="bg-dark form-control" placeholder="Name">
+                        </div>
+                    </div>
+
+                    <div class="form-group my-3">
+                            <div class="input-group input-group-lg">
+                                <div class="input-group-prepend">
+                                    <span class="input-group-text bg-danger"><i class="fas fa-envelope text-white"></i></span>
+                                </div>
+                                <input type="text" class="bg-dark form-control" placeholder="Email">
+                            </div>
+                    </div>
+
+                    <div class="form-group my-3">
+                            <div class="input-group input-group-lg">
+                                <div class="input-group-prepend">
+                                    <span class="input-group-text bg-danger"><i class="fas fa-pencil-alt text-white"></i></span>
+                                </div>
+                                <textarea class="bg-dark form-control" placeholder="Message"></textarea>
+                            </div>
+                    </div>
+                    <input class="btn btn-danger btn-block my-3" type="submit" value="Submit">
+                </form>
+                </div>
+            </div>
+        </div>
+    <footer class="bg-dark p-5">
+        <div>
+            <a class="btn btn-outline-light btn-md" href="index.html"><i class="fas fa-cloud text-white mr-2"></i>Download Resume</a>
+        </div>
+    </footer>
+    
+
+    </div>
+    </section>
+
+    
+        <!-- Script -->
+    <!-- <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+        crossorigin="anonymous"></script> -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js" integrity="sha384-smHYKdLADwkXOn1EmN1qk/HfnUcbVRZyYmZ4qpPea6sjB/pTJ0euyQp0Mk8ck+5T"
+        crossorigin="anonymous"></script>
+        <script src="ekko-lightbox-js.js"></script>
+
+    <script>
+   
+    $(document).ready(function(){
+        //hides sections that are not clicked on
+        $(".port-item").click(function(){
+            $(".collapse").collapse("hide");
+        });
+
+        //light box for "work" images
+        $(document).on("click", "[data-toggle='lightbox']", function(e){
+            e.preventDefault();
+            $(this).ekkoLightbox();
+        });
+    });
+        
+
+
+    </script>
+</body>
+</html>
