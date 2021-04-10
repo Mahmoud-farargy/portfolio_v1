@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+        <!-- Mahmoud Farargy -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta name="description" content="calculator | alarm clock | javascript apps | appchirp | exchange rate | lyrics search | clock | stopwatch">
+    <meta name="keywords" content="calculator | alarm clock | javascript apps | exchange rate | lyrics search | clock | stopwatch">
+    <meta name="author" content="Mahmoud Farargy">
+    <script src="jquery3.4.1.js"></script>
+    <script src="vue.js"></script>
+    <link rel="icon" sizes="192x192" href="logo4.png">
+    <link rel="stylesheet" type="text/css" href="./fontawesome/all.css">
+    <link rel="stylesheet" type="text/css" href="./bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" href="./bootstrap/css/bootstrap-grid.min.css">
+    <link rel="stylesheet" type="text/css" href="./bootstrap/css/bootstrap-reboot.min.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Audiowide&family=Squada+One&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/vue-resource@1.5.1"></script>
+    <!-- <script type="text/javascript" src="./bootstrap/js/bootstrap.min.js"></script> -->
+    <!-- <script type="text/javascript" src="./bootstrap/js/bootstrap.bundle.min.js"></script> -->
+
+    <title>Appchirp</title>
+</head>
+<body>
+
+    <div class="container" id="app">
+
+
+
+        <transition name="fade" >
+            <!-- <keep-alive> -->
+                <component :is="switchComp"></component>
+            <!-- </keep-alive> -->
+        </transition>
+
+        
+    </div>
+    
+
+    <!-- Scripts -->
+    
+   <script src="https://code.jquery.com/jquery-3.4.1.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo="
+    crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49"
+    crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js" integrity="sha384-smHYKdLADwkXOn1EmN1qk/HfnUcbVRZyYmZ4qpPea6sjB/pTJ0euyQp0Mk8ck+5T"
+    crossorigin="anonymous"></script>
+    <script type="text/javascript" src="script.js"></script>
+</body>
+</html>

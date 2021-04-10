@@ -1,0 +1,113 @@
+* {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+:root {
+  --main-site-clr:#3292a6;
+}
+
+body {
+  margin-top: 105px;
+}
+
+header {
+  width: 100%;
+  -webkit-box-shadow: 2px 2px 4px rgba(35, 136, 150, 0.6);
+          box-shadow: 2px 2px 4px rgba(35, 136, 150, 0.6);
+  opacity: .9;
+  background: #fff;
+}
+
+header .navbar-nav {
+  font-size: 22px;
+  font-weight: 430;
+}
+
+#home {
+  background: -webkit-gradient(linear, left top, left bottom, from(rgba(45, 146, 166, 0.8)), to(rgba(35, 136, 150, 0.8))), url(./img/mountains.jpg);
+  background: linear-gradient(rgba(45, 146, 166, 0.8), rgba(35, 136, 150, 0.8)), url(./img/mountains.jpg);
+  width: 100%;
+  height: 90vh;
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+input[type="submit"] {
+  background: var(--main-site-clr);
+  color: white;
+  font-size: 20px;
+}
+
+.css-card {
+  border: 1px solid var(--main-site-clr);
+  border-radius: 3px;
+}
+
+.css-card:nth-child(even) {
+  background-color: var(--main-site-clr);
+  color: #fff;
+}
+
+.css-card:nth-child(even) .card-title {
+  color: #fff !important;
+}
+
+.little-width-box {
+  margin: 0 auto;
+  max-width: 50%;
+  border-bottom: 1px solid #aaaaaa;
+}
+
+.little-width-box h1 {
+  color: var(--main-site-clr);
+}
+
+footer {
+  background-color: var(--main-site-clr);
+  width: 100%;
+}
+
+.css-card2 {
+  position: relative;
+}
+
+.css-card2:hover {
+  background-color: var(--main-site-clr);
+  color: #fff;
+}
+
+.css-card2:hover .text-muted {
+  color: #d8d8d8 !important;
+}
+
+.css-absolute {
+  position: absolute;
+  top: 0;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+}
+
+.css-img-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+@media only screen and (max-width: 740px) {
+  #home {
+    height: 550px;
+  }
+  #home h4 {
+    font-size: 3rem !important;
+  }
+}
+/*# sourceMappingURL=scss.css.map */

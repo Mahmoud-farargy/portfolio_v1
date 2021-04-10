@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="description" content="saves notes and quotes | Notes keeper | memo | note | save notes | mahmoud farargy | quotes | quote saver | keeper | quotes app" >
+    <meta name="viewport" content="width=device-width, initial-scale=1.0 maximum-scale=1.0">
+    <meta name="author" content="Mahmoud Farargy">
+    <meta name="keywords" content="Note | notes keeper | advanced app | Mahmoud farargy | vue app">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Girassol&family=Lobster+Two&display=swap" rel="stylesheet">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <script src="jquery3.4.1.js"></script>
+    
+    <script src="vue.js"></script>
+    <link rel="icon" sizes="192X192" href="iconfinder_91.png">
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <script src="VueRouter.js"></script>
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
+    <script src="https://code.jquery.com/jquery-1.12.3.min.js" integrity="sha256-aaODHAgvwQW1bFOGXMeX+pC4PZIPsvn2h1sArYOhgXQ=" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/vue-resource@1.5.1"></script>
+    <script src="https://unpkg.com/vuex"></script>
+    <meta name="description" content= "Notes Keeper | Quotes Keeper |Mahmoud Farargy">
+    <link href="https://fonts.googleapis.com/css?family=Roboto:100,300,400,500,700,900" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/@mdi/font@5.x/css/materialdesignicons.min.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/vuetify@2.x/dist/vuetify.min.css" rel="stylesheet">
+    <script>
+      $(function(){ 
+          $("[data-toggle='tooltip']").tooltip();
+      });
+        
+
+        //Activate CK editor
+
+          // ClassicEditor
+          //     .create( document.querySelector( '#editor1' ))
+          //     .catch( error => {
+          //         // console.error( error );
+          //     } );
+      
+    </script>
+  
+    <meta charset="utf-8">
+    <title>Memo</title>
+  </head>
+  <body>
+
+        <div id="app">
+           
+        </div>
+
+
+    <!-- SCRIPTS -->
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
+    crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js" integrity="sha384-smHYKdLADwkXOn1EmN1qk/HfnUcbVRZyYmZ4qpPea6sjB/pTJ0euyQp0Mk8ck+5T"
+        crossorigin="anonymous"></script>
+
+        <!-- CDNJS :: Sortable (https://cdnjs.com/) -->
+        <script src="https://cdn.jsdelivr.net/npm/sortablejs@1.8.4/Sortable.min.js"></script>
+        <!-- CDNJS :: Vue.Draggable (https://cdnjs.com/) -->
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/Vue.Draggable/2.20.0/vuedraggable.umd.min.js"></script>
+    <!-- <script src="ckeditor.js"></script> -->
+
+    <script src="https://www.gstatic.com/firebasejs/7.14.2/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/7.14.2/firebase-analytics.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/7.14.2/firebase-auth.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/7.14.2/firebase-firestore.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/7.14.2/firebase-storage.js"></script>
+    
+    
+    <script>
+        var firebaseConfig = {
+                apiKey: "AIzaSyC_F3NqhBncl0n5lwRKFQXxH3LT4UdEi1E",
+                authDomain: "note-keeper-app.firebaseapp.com",
+                databaseURL: "https://note-keeper-app.firebaseio.com",
+                projectId: "note-keeper-app",
+                storageBucket: "note-keeper-app.appspot.com",
+                messagingSenderId: "Mahmoud",
+                appId: "1:197246635117:web:8098b10bc89dd3e2b00364",
+                measurementId: "G-JLNZRXCK8S"
+        };
+        firebase.initializeApp(firebaseConfig);
+  
+        const auth = firebase.auth();
+        const db = firebase.firestore();
+        const ref = firebase.storage().ref();
+      </script>
+      <script defer type="text/javascript" src="script.js"></script>
+      <script src="https://cdn.jsdelivr.net/npm/vuetify@2.x/dist/vuetify.js"></script>
+  </body>
+</html>

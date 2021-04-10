@@ -1,0 +1,1668 @@
+<!DOCTYPE html>
+<html>
+    <head>                  <!--COPYRIGHT 2020 MAHMOUD FARARGY-->
+        <meta charset="UTF-8">
+        <meta lang="en">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0">
+        <title>Mahmoud Farargy | Front-End Developer</title>
+        <link rel="stylesheet" type="text/css"  href="style.css">
+        <link href="google-fonts.css" rel="stylesheet">
+        <meta name="generator" content="Gatbsy 2.22.11">
+        <meta data-react-halmet="true" name="description" content="Mahmoud Farargy | Front-End Developer | front end web developer | web developer | El-farargy">
+        <style data-styled ="active" data-styled-version="5.1.0"></style>
+        <!-- fonts -->
+        <link href="https://fonts.googleapis.com/css2?family=Lobster+Two:ital,wght@1,700&display=swap" rel="stylesheet">
+        <!-- font awesome -->
+        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css" integrity="sha384-oS3vJWv+0UjzBfQzYUhtDYW+Pj2yciDJxpsK1OYPAYjqT085Qq/1cq5FLXAZQ7Ay" crossorigin="anonymous"/>
+        <!-- bootstrap -->
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+        <link rel="icon" sizes="210x210" href="latin-english-letter-m-uppercase-512.png">
+        <!-- jquery -->
+        <script src="jquery3.4.1.js"></script>
+        <!-- vue -->
+        <script src="vue.js"></script>
+        <!-- <script type="text/javascript" src="https://unpkg.com/vue-router@3.3.4/dist/vue-router.js"></script> -->
+        <script src="https://cdn.jsdelivr.net/npm/vue-resource@1.5.1"></script>
+        <!-- <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet"> -->
+        <!-- aos -->
+        <link rel="stylesheet" href="./aos.css" >
+         <!-- splide carousel -->
+         <link rel="stylesheet" href="./splideCSS-min.css">
+        <script>
+    $(document).ready(()=>{
+        const splideOptions = {
+            type  : 'loop',
+            autoplay    : true,
+	        pauseOnHover: true,
+            interval: 5000,
+            lazyLoad: true,
+            cover  : true,
+            height : '100%',
+            width:'100%',
+            perPage: 1,
+        }
+        new Splide( ".splide" , splideOptions).mount();
+        new Splide( ".visipointCarousel" , splideOptions).mount();
+        new Splide( ".googleCarousel" , splideOptions).mount();
+        new Splide( ".instagramCarousel", splideOptions).mount();
+        new Splide( ".xypoCarousel", splideOptions).mount();
+        new Splide( ".spotifyCarousel", splideOptions).mount();
+        new Splide( ".blogenCarousel", splideOptions).mount();
+        new Splide( ".netflixCarousel", splideOptions).mount();
+        new Splide( ".hotelResortCarousel", splideOptions).mount();
+        new Splide( ".amazonCarousel", splideOptions).mount();
+        new Splide( ".wordBeaterCarousel", splideOptions).mount();
+        new Splide( ".mizuxeCarousel", splideOptions).mount();
+        new Splide( ".burgerioCarousel", splideOptions).mount();
+        new Splide( ".traviaCarousel", splideOptions).mount();
+        new Splide( ".splendifyCarousel", splideOptions).mount();
+        new Splide( ".notesCarousel", splideOptions).mount();
+        new Splide( ".budgetCarousel", splideOptions).mount();
+        new Splide( ".lyricsFinderCarousel", splideOptions).mount();
+        new Splide( ".dictionaryCarousel", splideOptions).mount();
+        new Splide( ".appchirpCarousel", splideOptions).mount();
+        new Splide( ".soundcloudCarousel", splideOptions).mount();
+        
+
+        $(window).on('scroll', function(){
+        if($(window).scrollTop()){
+            $('nav').addClass('black-bcg');
+        }else{
+            $('nav').removeClass('black-bcg');
+        }
+    });
+    $(".navbar-toggler").click(function(){
+        var expanded = $(".navbar-toggler").attr("class");
+
+        if(expanded.match("collapsed")){
+             $(".navbar-toggler").css("transform","rotate(90deg)");
+             $(".navbar-toggler div").css("background","linear-gradient(90deg, rgb(225,225,255),var(--secondaryClr))");
+        }else{
+            $(".navbar-toggler").css("transform","rotate(0)");
+            $(".navbar-toggler div").css("background","linear-gradient(90deg, var(--secondaryClr), rgb(225,225,255))");
+        }
+       
+    });
+
+    //update the copyright year
+    $("#year").text(new Date().getFullYear());
+
+    //scrollspy
+    $("body").scrollspy({target: "#main-nav"});
+
+    $(".fa-chevron-circle-up").mouseenter(function(){
+        $(".go-up").css("opacity","1").stop().fadeIn(200);
+    });
+    $(".fa-chevron-circle-up").mouseleave(function(){
+        $(".go-up").css("opacity","0.2").fadeOut(200);
+    });
+    
+
+    });    
+        </script>
+    </head>
+    <body data-spy="scroll">
+        <div id="app">
+        <header>
+                        <!-- Navigation -->
+            <nav class="fixed-top navbar navbar-expand-md navbar-dark" id="myNav">
+                <div class="container">
+                        <a href="./index.html" class="up-link"><img loading="lazy" class="navbar-brand" alt="logo" src="latin-english-letter-m-uppercase-512.png" style="width:32px; margin-right:5px !important; filter: drop-shadow(rgba(225,225,225,0.2) 0px 0px 13px);"> <span class="text-white pageAuthor" style="font-family: 'Coda+Caption:800', cursive;">Mahmoud Farargy</span> 
+                        </a>
+                       
+                    <!-- night/day theme -->
+                    <div class="night-day-theme">
+                        <input type="checkbox" class="checkbox" id="checkbox">
+                        <label for="checkbox" class="checkbox-label">
+                            <i class="fas fa-sun"></i>
+                            <i class="fas fa-moon"></i>
+                            <div class="ball-indicator"></div>
+                        </label>
+                    </div>
+                    <!-- Hamburger toggle button -->
+                    <button class="navbar-toggler" data-toggle="collapse" data-target="#main-nav">
+                            <div class="ham-bar bar1"></div>
+                            <div class="ham-bar bar2"></div>
+                            <div class="ham-bar bar3"></div>
+                            <!-- <span class="navbar-toggler-icon text-white"></span> -->
+                    </button>
+                    <!-- Navigation menu -->
+                    <div class="collapse navbar-collapse" id="main-nav">
+                        <ul class="navbar-nav ml-auto">
+                            <li class="nav-item"><a class="nav-link text-uppercase" href="#about">About</a></li>
+                            <li class="nav-item"><a class="nav-link text-uppercase" href="#skills">Skills</a></li>
+                            <li class="nav-item"><a class="nav-link text-uppercase" href="#work">Work</a></li>
+                            <li class="nav-item"><a class="nav-link text-uppercase" href="#contact">Contact</a></li>
+                            <li class="dropdown nav-item">
+                                <a data-toggle="dropdown" class="dropdown-toggle text-uppercase css-btn-nav-config nav-link" style="cursor:pointer;">Certifications</a>
+                                <ul class="dropdown-menu add-box-shadow">
+                                    <li class="dropdown-item"><a href="./CV/Work_Certificate_03_09_2021.jpg" target="_blank">Work Experience</a></li>
+                                    <li class="dropdown-item"><a href="./ETSNGTCR_0000000033555268.pdf" target="_blank">TOFEL iBT</a></li>
+                                    <li class="dropdown-item"><a href="https://www.freecodecamp.org/certification/farargy/responsive-web-design" target="_blank">Responsive Web Design</a></li>
+                                    <li class="dropdown-item"><a href="https://www.freecodecamp.org/certification/farargy/javascript-algorithms-and-data-structures" target="_blank">JavaScript Algorithms & <br>Data Structures </a></li>
+                                    <li class="dropdown-item"><a href="https://www.freecodecamp.org/certification/farargy/front-end-libraries" target="_blank">Front End Libraries</a></li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </div>
+                </div> 
+            </nav>
+       </header>    
+         
+                  <!-- INTRO SECTION -->
+    <section class="intro-layout" >
+        <div class="intro-container ">
+                <h2 class="text-uppercase" data-aos="fade-down" data-aos-delay="100" data-aos-duration="1000">Hi, I'm mahmoud</h2>
+                <h5 data-aos="fade-up" data-aos-delay="100" data-aos-once="true" data-aos-duration="1000">A front end web developer who is specialized in building robust websites and web applications. Lover of code, coffee and lack of sleep. <br/> Take a look at some of my work, and if you like it, feel free to contact me.</h5>
+                <div class="hero-btns" data-aos="fade-up" data-aos-delay="100" data-aos-duration="1000" data-aos-once="true">
+                    <button class="btn btn-light rubberBand mr-2"><a href="#work" class="text-dark">My Portfolio</a></button>
+                    <button class="btn btn-light rubberBand mr-2"><a href="#contact" class="text-dark">Contact Me</a></button>
+                </div>
+        </div>
+        <a class="arrow-down" style="-webkit-box-reflect: below 1px linear-gradient(transparent, rgba(5, 5, 5, 0.4)); -moz-box-reflect: below 1px linear-gradient(transparent, rgba(5, 5, 5, 0.4));" href="#about"><i class="fas fa-chevron-down fa-2x" alt="icon"></i></a>
+    </section>
+                                         <!-- ABOUT -->
+        <section class="sec-container py-3" id="about">
+            <div class="container-inner d-flex flex-column text-center align-self-center justify-content-center align-items-center py-5" data-aos="fade-up" data-aos-duration= 1000 data-aos-once="true">
+                <h3 class="title4 main-header">A little bit about me</h3>
+                <p>Hey! My name is Mahmoud and I'm a self-taught web developer with a strong passion for front end
+                    development. I graduated from <a href="https://tanta.edu.eg/en/" target="_blank"><span>Tanta University</span></a> in Egypt and I essentially have a collage degree in <a href="http://com.tanta.edu.eg/en/stu-incom.aspx" target="_blank"><span>business administration</span></a> but I found myself more passionate
+                    about coding and developing websites. I aspire toward a career that will allow me to channel my creativity through crafting
+                    web pages and engaging experiences. </p>
+
+
+            <div class="mt-4 mb-5" id="accordion" style="width:100%;">
+                <div class="card"  style="border-top-left-radius:20px; border-top-right-radius:20px;">
+                    
+                    <div class="card-header pt-2 pb-1" @click="isAccordionClicked = !isAccordionClicked" href="#resources" data-toggle="collapse" data-parent="#accordion"  style="border-top-left-radius:20px; border-top-right-radius:20px;">
+                        <h5 class="subtitle"> 
+                        <i class="fas fa-arrow-circle-down fa-lg mr-1 text-dark " :class="{rotateIcons: isAccordionClicked}"></i> Resources
+                        </h5>
+                    </div>
+                    <div class="card-body edit-card-padding collapse text-left" id="resources">
+                <h5 style="color:rgb(52, 52, 211);  font-family:var(--Livvic);" class="mb-3">Resources that have helped me throughout my self-teaching process</h5>
+                    <h6 style="font-weight:bold;">Udemy courses:</h6>
+                       <p>These courses were highly effective and advantageous, they have played a huge part in helping me reach the level of knowledge where I'm at now as they provided a full in-depth curriculum of each language and framework with an excellent explanation of each lesson in a way that is understandable and easy to follow.<br>
+                        I've bought a variety of Udemy courses from different instructors, watched them, understood each point presented and applied what I've learned in my text editor.
+                       </p> 
+                    
+                    <h6 style="font-weight:bold;">FreeCodeCamp website:</h6>
+                        <p>
+                        I've actually spent countless hours learning on this website alone. In this period, I managed to completely
+                        finish the client-side section and the challenges that are provided there. The hardest part was the intermediate Javascript algorithms but I absolutely enjoyed every second of that time and got familiar with solving problems and knew that in order to unravel the most complex algorithm you must divide it into little chucks then solve each part individually and eventually create the entire picture which is the web application that's intended to be done. <a href="https://www.freecodecamp.org/farargy" target="_blank"><span>My timeline on freecodecamp</span></a>
+                        </p>
+
+                    <h6 style="font-weight:bold;">Youtube Tutorials:</h6>
+                        <p>
+                           Before learning a language or framework I like to check out crash courses about it on YouTube to understand its basic concepts then gradually pave my way for learning more advanced concepts and dive deeper in it from there.<br>
+                           Also, I used to refer to online tutorials whenever I get stuck in making a certain effect or feature then I make sure to get a full grasp of it so I can apply it without problems next time.
+                        </p>
+                    
+                    <h6 style="font-weight:bold;">Online Articles & PDFs:</h6>
+                        <p>
+                           In my spare time, I like to read articles about the web development industry, how the internet works and how to implement some features into a web page or make an element appear in a certain way.
+                        </p>
+                </div>
+            </div>
+            
+                <div class="card" style="border-bottom-left-radius:20px; border-bottom-right-radius:20px;">
+                    <div class="card-header pt-2 pb-1" @click="isAccordionClicked2 = !isAccordionClicked2" href="#family" data-toggle="collapse" data-parent="#accordion" style="border-bottom-left-radius:20px; border-bottom-right-radius:20px;">
+                        <h5 class="subtitle">
+                            <i class="fas fa-arrow-circle-down fa-lg mr-2 text-dark" :class="{rotateIcons: isAccordionClicked2}"></i>Family
+                        </h5>
+                    </div>
+                    <div class="card-body edit-card-padding collapse text-left" id='family'>
+                        <p>I'm a son of two amazing parents. My dad is a doctor and my mom is a social worker, I have three sisters we show to each other nothing but respect and love.</p>
+                    </div>
+                    </div>
+                </div>
+                   
+                   
+                <p class="marg">When I'm not on the computer. I enjoy playing football, traveling and Jogging</p>
+                <div class="lil-container" data-aos="flip-up" data-aos-delay="200" data-aos-once="true">
+                    <h5>TL;LR? self proclamations</h5>
+                    <div class="flexC">
+                        <div>
+                            <i class="fas fa-laptop-code fa-2x mt-4"></i>
+                            <h6>Developer</h6>
+                        </div>
+                        <div>
+                            <i class="fas fa-futbol fa-2x mt-4"></i>
+                            <h6>Footballer</h6>
+                        </div>
+                        <div>
+                            <i class="fas fa-suitcase fa-2x mt-4"></i>
+                            <h6>Traveller</h6>
+                        </div>
+                    </div>
+                </div>  
+            </div>
+        </section>
+                                             <!-- SKILLS -->
+        <section class="third-container pt-4 py-5" id="skills">
+            <h2 class="title4 main-header">What skills do I Have</h2>
+            <p style="line-height:1.7; margin-bottom:25px !important;">I've been learning web development for nearly two years. Here are the technologies I learned so far.<br>
+                    And I'm always eager to discover and learn more in this fast paced industry.
+            </p>
+            <div  class="container skills d-flex flex-column align-items-center justify-content-center" style="overflow-x:hidden; overflow-y:hidden;">
+                <div class="row" style="overflow:none;">
+                    <div class="col-md-4"  style="overflow:none;">
+                        <h5 class="text-center">Languages</h5>
+                        <ul>
+                            <li data-aos="fade-right" data-aos-duration="1000" data-aos-once="true">
+                                <div class="mb-3"><abbr title="HTML"><img loading="lazy" class="html-img" src="html.png"></abbr></div>
+                            </li>
+                            <li data-aos="fade-right" data-aos-duration="1500" data-aos-once="true">
+                                <div class="mb-3"><abbr title="CSS"><img loading="lazy" class="css-img" src="css.png"></abbr></div>
+                            </li>
+                            <li data-aos="fade-right" data-aos-duration="2000" data-aos-once="true">
+                                <div class="mb-3"><abbr title="JavaScript"><img loading="lazy" class="js-img" src="js.png"></abbr></div>
+                            </li>
+                        </ul>
+                    </div>
+
+                    <div class="col-md-4"style="overflow:none;">
+                            <h5 class="centerMobile">Frameworks</h5>
+                            <ul>
+                                <li data-aos="flip-down" data-aos-duration="1000" data-aos-once="true">
+                                    <div class="jquery-main mb-3"><abbr title="jQuery"><img loading="lazy" class="jquery-img" src="jquery.png"></abbr></div>
+                                </li>
+                                        
+                                <li  data-aos="flip-down" data-aos-duration="1500" data-aos-once="true">
+                                    <div class="bootstrap-main mb-3"><abbr title="Bootstrap"><img loading="lazy" class="bootstrap-img" src="bootstrap.png"></abbr></div>
+                                </li>
+                                <li  data-aos="flip-down" data-aos-duration="2000" data-aos-once="true">
+                                    <div class="vue-main mb-3"><abbr title="Vue.js"><img loading="lazy" class="vue-img" src="Vue.png"></abbr></div>
+                                </li>
+                                <li  data-aos="flip-down" data-aos-duration="2500" data-aos-once="true">
+                                    <div class="react-main mb-4"><abbr title="React.js"><img loading="lazy" class="react-img" src="React.png"></abbr></div>
+                                </li>
+                            </ul>
+                    </div>
+
+                    <div class="col-md-4"  style="overflow:none;">
+                        <h5 class="text-center">Preprocessors & Tools</h5>
+                        <ul>  
+                            <li data-aos="fade-left" data-aos-duration="1000" data-aos-once="true">
+                                <div class="mb-4"><abbr title="Sass"><img loading="lazy" class="sass-img" src="sass.png"></abbr></div>
+                            </li>
+
+                            <li data-aos="fade-left" data-aos-duration="1500" data-aos-once="true">
+                                <div class="mb-3"><abbr title="Github"><img loading="lazy" class="github-img" src="github.png"></abbr></div>
+                            </li>
+
+                            <li data-aos="fade-left" data-aos-duration="2000" data-aos-once="true">
+                                <div class="mb-3"><abbr title="Firebase"><img loading="lazy" class="firebase-img" src="firebase.png"></abbr></div>
+                            </li>
+                        </ul>
+                    </div>
+
+                </div>
+                               
+            </div>
+                                           
+        </section>
+                                                <!-- RESUME -->
+            <div class="resume">
+                <h2 class="title4">CHECK OUT MY RÉSUMÉ!</h2>
+                <a class="resume-btn btn text-center" data-aos="zoom-in" data-aos-once="true" href="./CV/my-cv.pdf" target="_blank">Grab a copy</a>
+            </div>
+
+                                                <!-- WORK -->
+        <section class="fourth-container mt-3 mb-4" id="work">
+            <div class="overlay">
+                    <h2 class="title4 main-header">Some Things I've done</h2> 
+                    <p>(more coming soon)</p>
+                    <div class="btn-toolbar">
+                        <div class="btn-group" id="filterToolbar">
+                            <button data-target="all" class="btn btn-dark active">All</button>
+                            <button data-target="css" class="btn btn-dark">CSS</button>
+                            <button data-target="javascript" class="btn btn-dark">Javascript</button>
+                            <button data-target="bootstrap" class="btn btn-dark">Bootstrap</button>
+                            <!-- <button data-target="jquery" class="btn btn-dark">jQuery</button> -->
+                            <button data-target="vue" class="btn btn-dark">Vue.js</button>
+                            <button data-target="react" class="btn btn-dark">React.js</button>
+                        </div>
+                    </div>
+            </div>
+            <div >
+
+             <!--  -->
+            <div class="portfolio-items projects-container" id="autoScroll">
+        <!-- Visipoint App -->
+        <div id="test1" data-id="vue" data-aos="fade-right"
+            data-aos-delay="400" data-aos-once="true">
+                        <img loading="lazy" class="b-img" id="visipoint" src="./projects_images/visipoint/Capture1.png" alt="Visipoint" data-toggle="modal" data-target="#visipointApp">
+                <div class="hover-img-overlay" data-toggle="modal" data-target="#visipointApp">
+                        <i class="fas fa-search-plus fa-lg zoom-icon"></i>
+                        <h5 class="img-text" style="word-break: keep-all;">Visipoint</h5>
+                </div>
+            
+        </div> 
+        <!-- React amazon clone -->
+        <div id="test1" data-id="react"  data-aos="fade-right"
+            data-aos-delay="700" data-aos-once="true">
+                <img loading="lazy" class="b-img" id="amazon" src="./projects_images/amazon-clone/Capture2.jpg" alt="Amazon Clone" data-toggle="modal" data-target="#amazonClone">
+                <div class="hover-img-overlay" data-toggle="modal" data-target="#amazonClone">
+                    <i class="fas fa-search-plus fa-lg zoom-icon"></i>
+                    <h5 class="img-text" style="word-break: keep-all;"> Amazon Clone </h5>
+                </div>
+
+        </div>     
+         <!-- Spotify clone  -->
+        <div id="test1" data-id="react" data-aos="fade-right"
+            data-aos-delay="1000" data-aos-once="true">
+                <img loading="lazy" class="b-img" id="spotify" src="./projects_images/spotify-clone/Capture1.jpg" alt="Spotify Clone" data-toggle="modal" data-target="#spotifyClone">
+                <div class="hover-img-overlay" data-toggle="modal" data-target="#spotifyClone">
+                    <i class="fas fa-search-plus fa-lg zoom-icon"></i>
+                    <h5 class="img-text" style="word-break: keep-all;"> Spotify Clone </h5>
+                </div> 
+        </div>  
+         <!-- Instagram clone  -->
+         <div id="test1" data-id="react" >
+                <img loading="lazy" class="b-img" id="instagramIG" src="./projects_images/instagram-clone/Capture1.png" alt="Instagram Clone" data-toggle="modal" data-target="#instaClone">
+                <div class="hover-img-overlay" data-toggle="modal" data-target="#instaClone">
+                    <i class="fas fa-search-plus fa-lg zoom-icon"></i>
+                    <h5 class="img-text" style="word-break: keep-all;"> Instagram Clone </h5>
+                </div>
+        </div>  
+            <!-- Budget calculator -->
+                    <div id="test1" data-id="javascript" >
+                            <img loading="lazy" class="b-img" id="proj1" src="./projects_images/budget/Capture1.png" alt="Budget App"  data-toggle="modal" data-target="#modal1">
+                            <div class="hover-img-overlay" data-toggle="modal" data-target="#modal1">
+                                <i class="fas fa-search-plus fa-lg zoom-icon"></i>
+                                <h5 class="img-text">Budget Calculator</h5>
+                            </div>
+                    </div>
+            <!-- Netflix -->
+                 <div id="test1" data-id="react" >
+                                    <img loading="lazy" class="b-img" id="netflixClone" src="./projects_images/netflix-clone/Capture1.png" alt="netflix" data-toggle="modal" data-target="#netflix">
+                                    <div class="hover-img-overlay" data-toggle="modal" data-target="#netflix">
+                                        <i class="fas fa-search-plus fa-lg zoom-icon"></i>
+                                        <h5 class="img-text">Netflix Clone</h5>
+                                     </div>
+                 </div>
+                <!-- Vue Note -->
+                        <div id="test1" data-id="vue"  >
+                                        <img loading="lazy" class="b-img" id="memo" src="./projects_images/notes-keeper/Capture1.jpg" alt="Vue note" data-toggle="modal" data-target="#notesKeeper">
+                                        <div class="hover-img-overlay" data-toggle="modal" data-target="#notesKeeper">
+                                            <i class="fas fa-search-plus fa-lg zoom-icon"></i>
+                                            <h5 class="img-text">Notes Keeper</h5>
+                                        </div>
+                        </div>
+                <!-- Vue lyrics -->
+                <div id="test1" data-id="vue"  >
+                                                <img loading="lazy" class="b-img" id="ilyrics" src="./projects_images/lyrics-finder/Capture1.jpg" alt="Vue note" data-toggle="modal" data-target="#lyricsFinder">
+                                                <div class="hover-img-overlay" data-toggle="modal" data-target="#lyricsFinder">
+                                                    <i class="fas fa-search-plus fa-lg zoom-icon"></i>
+                                                    <h5 class="img-text">Lyrics Finder</h5>
+                                                </div>
+                 </div>
+                 <!-- React hotel sesort -->
+                 <div id="test1" data-id="react"  >
+                                        <img loading="lazy" class="b-img" id="summerResort" src="./projects_images/summer-resort/Capture1.jpg" alt="Hotel Reservation App" data-toggle="modal" data-target="#hotelResort">
+                                        <div class="hover-img-overlay" data-toggle="modal" data-target="#hotelResort">
+                                            <i class="fas fa-search-plus fa-lg zoom-icon"></i>
+                                            <h5 class="img-text" style="word-break: keep-all;"> Hotel Reservation Site </h5>
+                                        </div>
+                </div>
+                 <!-- Vue dictionary -->
+                <div id="test1" data-id="vue" >
+                                                <img loading="lazy" class="b-img" id="idictionary" src="./projects_images/dictionary/Capture2.jpg" alt="word dictionary" data-toggle="modal" data-target="#wordDictionary">
+                                    <div class="hover-img-overlay" data-toggle="modal" data-target="#wordDictionary">
+                                        <i class="fas fa-search-plus fa-lg zoom-icon"></i>
+                                        <h5 class="img-text">Dictionary with over 10 languages</h5>
+                                     </div>
+                 </div>
+                 <!-- CSS travia -->
+                 <div id="test1" data-id="css"  >
+                        <img loading="lazy" class="b-img" id="traviaCSS" src="./projects_images/travia/Capture1.jpg" alt="Travia" data-toggle="modal" data-target="#travia">
+                        <div class="hover-img-overlay" data-toggle="modal" data-target="#travia">
+                            <i class="fas fa-search-plus fa-lg zoom-icon"></i>
+                            <h5 class="img-text" style="word-break: keep-all;"> Travia </h5>
+                        </div>
+                 </div>
+                 <!-- google clone -->
+                 <div id="test1" data-id="react" >
+                    <img loading="lazy" class="b-img" id="google" src="./projects_images/google-clone/Capture1.PNG" alt="Google Clone" data-toggle="modal" data-target="#googleClone">
+                        <div class="hover-img-overlay" data-toggle="modal" data-target="#googleClone">
+                            <i class="fas fa-search-plus fa-lg zoom-icon"></i>
+                            <h5 class="img-text">Google Clone</h5>
+                        </div>
+                </div>
+                 <!-- Vue appchirp -->
+                 <div id="test1" data-id="vue" >
+                                                <img loading="lazy" class="b-img" id="AppChirp" src="./projects_images/appchirp/Capture1.PNG" alt="App Chirp" data-toggle="modal" data-target="#appChirp">
+                                    <div class="hover-img-overlay" data-toggle="modal" data-target="#appChirp">
+                                        <i class="fas fa-search-plus fa-lg zoom-icon"></i>
+                                        <h5 class="img-text">13+ Useful Tools All In One App</h5>
+                                     </div>
+                 </div>
+                 <!-- css xypo -->
+                 <div id="test1" data-id="css" >
+                                    <img loading="lazy" class="b-img" id="xypoCSS" src="./projects_images/xypo/Capture1.jpg" alt="Xypo" data-toggle="modal" data-target="#xypo">
+                                    <div class="hover-img-overlay" data-toggle="modal" data-target="#xypo">
+                                        <i class="fas fa-search-plus fa-lg zoom-icon"></i>
+                                        <h5 class="img-text" style="word-break: keep-all;"> Xypo </h5>
+                                    </div>
+                </div>
+                <!-- Bootstrap splendify -->
+                <div id="test1" data-id="bootstrap"  >
+                        <img loading="lazy" class="b-img" id="splendifyBootstrap" src="./projects_images/splendify/Capture1.jpg" alt="splendify" data-toggle="modal" data-target="#splendify">
+                        <div class="hover-img-overlay" data-toggle="modal" data-target="#splendify">
+                            <i class="fas fa-search-plus fa-lg zoom-icon"></i>
+                            <h5 class="img-text" style="word-break: keep-all;"> Splendify </h5>
+                        </div>
+                </div>
+                
+                    <!-- React burger builder -->
+                    <div id="test1" data-id="react"  >
+                                            <img loading="lazy" class="b-img" id="burgerApp" src="./projects_images/burger-builder/Capture1.png" alt="burger app" data-toggle="modal" data-target="#burgerBuilder">
+                                            <div class="hover-img-overlay" data-toggle="modal" data-target="#burgerBuilder">
+                                                <i class="fas fa-search-plus fa-lg zoom-icon"></i>
+                                                <h5 class="img-text" style="word-break: keep-all;"> Burger Buidler </h5>
+                                            </div>
+                    </div>
+                    <!-- React typing speed test -->
+                    <div id="test1" data-id="react" >
+                                            <img loading="lazy" class="b-img" id="typingTest" src="./projects_images/speed-test/Capture1.jpg" alt="Type speed test" data-toggle="modal" data-target="#wordBeater">
+                                            <div class="hover-img-overlay" data-toggle="modal" data-target="#wordBeater">
+                                                <i class="fas fa-search-plus fa-lg zoom-icon"></i>
+                                                <h5 class="img-text" style="word-break: keep-all;"> Typing Speed Test </h5>
+                                            </div>
+                    </div>
+                    
+
+                    <!-- Bootstrap  mizuxe -->
+                    <div id="test1" data-id="bootstrap"  >
+                                                <img loading="lazy" class="b-img" id="mizuxeBootstrap" src="./projects_images/mizuxe/Capture1.jpg" alt="Mizuxe" data-toggle="modal" data-target="#mizuxe">
+                                                <div class="hover-img-overlay" data-toggle="modal" data-target="#mizuxe">
+                                                    <i class="fas fa-search-plus fa-lg zoom-icon"></i>
+                                                    <h5 class="img-text" style="word-break: keep-all;"> Mizuxe </h5>
+                                                </div>
+                    </div>
+                    <!-- Bootstrap blogen -->
+                    <div id="test1" data-id="bootstrap"  >
+                                            <img loading="lazy" class="b-img" id="blogenBootstrap" src="./projects_images/blogen/Capture1.jpg" alt="Blogen" data-toggle="modal" data-target="#blogen">
+                                            <div class="hover-img-overlay" data-toggle="modal" data-target="#blogen">
+                                                <i class="fas fa-search-plus fa-lg zoom-icon"></i>
+                                                <h5 class="img-text" style="word-break: keep-all;"> Blogen </h5>
+                                            </div>
+                    </div>
+                    
+                            
+                        <!-- SoundCloud -->
+                            <div id="test1" data-id="react"  >
+                                        <img loading="lazy" class="b-img" id="soundcloud" src="./projects_images/soundcloud/Capture1.png" alt="SoundCloud App" data-toggle="modal" data-target="#SoundCloudApp">
+                                        <div class="hover-img-overlay" data-toggle="modal" data-target="#SoundCloudApp">
+                                            <i class="fas fa-search-plus fa-lg zoom-icon"></i>
+                                            <h5 class="img-text">SoundCloud App</h5>
+                                        </div>
+                            </div>
+                            
+
+                        <!-- show more projects -->
+                                 <!-- <div v-if="triggerShowMoreBtn"> -->
+                    
+         
+                        <!-- </div> -->
+                    </div>
+            </div>
+            <!-- <button class="showMoreBtn btn btn-primary mx-auto mt-5" @click="triggerShowMoreBtn = !triggerShowMoreBtn">{{triggerShowMoreBtn ? 'Show less' : 'Show more'}}</button> -->
+        </section>
+                                        <!-- Blog -->
+        <section id="blog" class="blog-outer-container">
+            <h2 class="title4 text-white text-center main-header">Blog</h2>
+           
+            <div class="blog-inner-container pb-4">
+                <div class="container" >
+                    <h4>Check out my blog!</h4>
+                    <div class="blog-container" >
+                        <!-- 1 -->
+                        <div data-aos="zoom-in" data-aos-easing="ease-in-out" data-aos-duration="400" data-aos-once="true">
+                            <a href="./blog/how-to-be-a-successful-front-end-developer.html" class="card blog-post p-0">
+                            <div class="blog__pic">
+                                <img loading="lazy" src="Case-Study-IT-1024x683.jpg" class="img-fluid img-responsive w-100">
+                            </div> 
+                                    <div class="card-body p-2">
+                                        <h6>How to be become a successful front end developer?</h6>
+                                        <small class="text-muted">Jun 14, 2020</small>
+                                    </div>
+                            </a>  
+                        </div>
+                       
+                        <!-- 2 -->
+                        <div data-aos="zoom-in" data-aos-easing="ease-in-out" data-aos-duration="700" data-aos-once="true">
+                            <a href="https://toptal.com/front-end#hiring-guide" target="_blank" class="card blog-post p-0">
+                                <div class="blog__pic">
+                                    <img loading="lazy" src="toptal.jpg" class="img-fluid img-responsive w-100">
+                                    <strong class="blog__pic__txt">External</strong>
+                                </div>
+                            
+                                    <div class="card-body p-2">
+                                        <h6>How to hire a front-end developer?</h6>
+                                        <small class="text-muted">Oct 28, 2020</small>
+                                    </div>
+                            </a>
+                        </div>
+                    </div>
+
+                        
+                </div>
+               
+            </div>
+        </section>
+
+                                        <!-- CONTACTS -->
+        <section class="fifth-outer-container">
+            <div class="fifth-inner-container">
+                <i data-aos="fade-down-right" data-aos-duration="2000" class="far fa-paper-plane " style="font-size:28px;"></i>
+                <h2 class="title4 main-header" id="contact">GET IN TOUCH!</h2>
+                <!-- <h4>Let's bring your idea(s) to life!</h4> -->
+                <p>Whether you have an idea for a project or just want to chat, feel free to shoot me an email at <a class="copyright2" href="mailto:mahmoudfarargy9@gmail.com">mahmoudfarargy9@gmail.com </a><br>
+                    or click the button blew to send me a contact form.
+                </p>
+                <a class="fifth-btn btn btn-outline-dark mt5" target="_blank" data-aos="zoom-in" data-aos-once="true" data-toggle="modal" data-target="#contactModal">Contact me</a>
+                <div class="modal fade" id="contactModal">
+                    <div class="modal-dialog">
+                        <div class="modal-content">
+                            
+                            <div class="modal-header bg-white">
+                                <h3 style="color:rgb(63, 63, 161);">Contact Me</h3>
+                                <h4 class="close" data-dismiss="modal">&times;</h4>
+                            </div>
+                            <div class="modal-body px-4 contact-bottom-overlay">
+                                <form id="resetForm">
+                                        <div class="input-group my-3">
+                                            <div class="input-group-prepend">
+                                                <span class="input-group-text"><i class="fas fa-user"></i></span>
+                                            </div>
+                                            <input autofocus required type="text" id="nameN" v-model="messageData.senderName" class="form-control form-control-lg" placeholder="Name">
+                                            
+                                        </div>
+                                        <div v-if="nameEmpty" class="alert alert-danger text-center">
+                                                <p>The name field should not be empty.</p>
+                                            </div>
+                                        <div class="input-group mb-3">
+                                                <div class="input-group-prepend">
+                                                    <span class="input-group-text"><i class="fas fa-envelope"></i></span>
+                                                </div>
+                                                <input type="email" id="emailN" v-model=" messageData.theirEmail" class="form-control form-control-lg" placeholder="Email">
+                                                
+                                        </div>
+                                        <div v-if="emailError" class="alert alert-danger text-center">
+                                                <p>The email you wrote is not valid.</p>
+                                        </div>
+                                        <div class="input-group mb-3">
+                                                    <div class="input-group-prepend"><span class="input-group-text"> <i class="fas fa-pencil-alt"></i></span></div>
+                                                    <textarea required id="messageN" class="form-control" v-model="messageData.theirMessage" placeholder="Message" style="min-height:150px;"></textarea>
+                                                          
+                                        </div>
+                                        <div v-if="messageEmpty" class="alert alert-danger text-center">
+                                                <p>The message field should contain at least 10 characters.</p>
+                                        </div>  
+                                   
+                                        <div id="logError"></div>
+
+                                    <input class="btn btn-primary btn-block mt-2 mb-2" @click="submitForm" type="submit">
+                                </form>
+                                <button class="btn btn-secondary btn-block mb-4" data-dismiss="modal">Cancel</button>
+                            </div>
+
+            
+                        </div>
+                    
+                       
+                    </div>
+                </div>
+                <div  id="messageAlert" class=" fixed-top alert alert-success text-center p-1" style="z-index:10000; padding:2px;">
+                            <h5  class="alert-text mb-1">Your message has been sent successfully.</h5>
+                            <h5 class="text-dark">Thanks for your feedback!</h5>
+                </div> 
+            </div>
+        </section>
+        <!-- MODALS -->
+        <!-- budget -->
+        <div class="modal fade" id="modal1">
+                        <div class="modal-dialog">
+                            <div class="modal-content">
+                                <div class="modal-header">
+                                    <h5 class="modal-title text-center">Budget Calculator</h5>
+                                    <span class="close ml-auto" data-dismiss="modal">&times;</span>
+                                </div>
+                                    <!--------- carousel------------>
+                                            <div class="budgetCarousel splide">
+                                                <div class="splide__track w-100">
+                                                    <ul class="splide__list w-100">
+                                                        <img loading="lazy" class="splide__slide" src="./projects_images/budget/Capture1.png" alt="Budget App">
+                                                        <img loading="lazy" class="splide__slide" src="./projects_images/budget/Capture2.png" alt="Budget App">
+                                                    </ul>
+                                                </div>
+                                            </div>
+                                    <!--x----- carousel--------x--> 
+                                <div class="modal-body">
+                                            
+                                    <div class="text-overlay">
+                                                <h5 class="text-center">Description</h5>
+                                        <p>In this app you can add income and expenses for
+                                            a certain month and it will calculate how much money you have made and 
+                                            spent and shows the final budget.
+                                    </div>
+                                    <div class="d-flex flex-wrap-wrap flex-column justify-content-center align-items-center">
+                                        <div class="d-flex my-2">
+                                            <a class="btn btn-outline-primary" href="budgetApp.html" target="_blank" style="margin-right:20px;">Note Keeper</a>
+                                            <a class="btn btn-outline-primary" href="https://codepen.io/mahmoud-farargy/pen/vYEQZpN" target="_blank"><i class="fas fa-external-link-alt"></i> Code..</a>
+                                        </div>
+                                    </div>
+
+                                </div>
+                                    
+                                </div>
+                                    <div class="modal-footer py-2">
+                                    <button class="btn btn-info" data-dismiss="modal">Close</button>
+                                    </div>
+                            </div>
+                        </div>
+                    </div>
+                <!-- --notes- -->
+                    <div class="modal fade" id="notesKeeper">
+                            <div class="modal-dialog modal-md">
+                                <div class="modal-content">
+                                    <div class="modal-header">
+                                        <h5 class="modal-title"> Notes Keeper</h5>
+                                        <span class="close ml-auto" data-dismiss="modal">&times;</span>
+                                    </div>
+                                        <!--------- carousel------------>
+                                            <div class="notesCarousel splide">
+                                                <div class="splide__track w-100">
+                                                    <ul class="splide__list w-100">
+                                                        <img loading="lazy" class="splide__slide" src="./projects_images/notes-keeper/Capture1.jpg" alt="Notes Keeper">
+                                                        <img loading="lazy" class="splide__slide" src="./projects_images/notes-keeper/Capture2.jpg" alt="Notes Keeper">
+                                                        <img loading="lazy" class="splide__slide" src="./projects_images/notes-keeper/Capture3.jpg" alt="Notes Keeper">
+                                                        <img loading="lazy" class="splide__slide" src="./projects_images/notes-keeper/Capture4.jpg" alt="Notes Keeper">
+                                                        <img loading="lazy" class="splide__slide" src="./projects_images/notes-keeper/Capture5.jpg" alt="Notes Keeper">
+                                                        <img loading="lazy" class="splide__slide" src="./projects_images/notes-keeper/Capture6.jpg" alt="Notes Keeper">
+                                                    </ul>
+                                                </div>
+                                            </div>
+                                        <!--x----- carousel--------x--> 
+                                        <div class="modal-body">
+                                            <div class="d-flex flex-wrap-wrap flex-column justify-content-center align-items-center">
+                                                    <div class="d-flex my-2">
+                                                        <a class="btn btn-outline-primary" href="https://vuenote.netlify.app" target="_blank" style="margin-right:20px;">Note Keeper</a>
+                                                        <a class="btn btn-outline-primary" href="https://github.com/Mahmoud-farargy/note/tree/master/note" target="_blank"><i class="fas fa-external-link-alt"></i> Code..</a>
+                                                    </div>                                                   
+
+                                            </div>
+                                        </div>
+                                        <div class="modal-footer py-2">
+                                        <button class="btn btn-info" data-dismiss="modal">Close</button>
+                                        </div>
+                                </div>
+                            </div>
+                        </div> 
+                    <!-- lyrics finder-->
+                        <div class="modal fade" id="lyricsFinder">
+                            <div class="modal-dialog modal-md">
+                                <div class="modal-content">
+                                    <div class="modal-header">
+                                        <h5 class="modal-title"> Lyrics Finder</h5>
+                                        <span class="close ml-auto" data-dismiss="modal">&times;</span>
+                                    </div>
+                                        <!--------- carousel------------>
+                                            <div class="lyricsFinderCarousel splide">
+                                                <div class="splide__track w-100">
+                                                    <ul class="splide__list w-100">
+                                                        <img loading="lazy" class="splide__slide" src="./projects_images/lyrics-finder/Capture1.jpg" alt="Lyrics Finder">
+                                                        <img loading="lazy" class="splide__slide" src="./projects_images/lyrics-finder/Capture2.jpg" alt="Lyrics Finder">
+                                                    </ul>
+                                                </div>
+                                            </div>
+                                        <!--x----- carousel--------x--> 
+                                        <div class="modal-body">
+                                            <div class="d-flex flex-wrap-wrap flex-column justify-content-center align-items-center">
+                                                    <div class="d-flex my-2">
+                                                            <a class="btn btn-outline-primary" href="./lyrics-search/index.html" target="_blank" style="margin-right:20px;">Lyrics Finder</a>
+                                                            <a class="btn btn-outline-primary" href="https://github.com/Mahmoud-farargy/ilyrics" target="_blank"><i class="fas fa-external-link-alt"></i> Code..</a>
+                                                    </div>                                                  
+
+                                            </div>
+                                        </div>
+                                        <div class="modal-footer py-2">
+                                        <button class="btn btn-info" data-dismiss="modal">Close</button>
+                                        </div>
+                                </div>
+                            </div>
+                        </div> 
+                    <!-- word dictionary -->
+                    <div class="modal fade" id="wordDictionary">
+                            <div class="modal-dialog modal-md">
+                                <div class="modal-content">
+                                    <div class="modal-header">
+                                        <h5 class="modal-title"> Dictionary with over 10 languages </h5>
+                                        <span class="close ml-auto" data-dismiss="modal">&times;</span>
+                                    </div>                                      
+                                        <!--------- carousel------------>
+                                            <div class="dictionaryCarousel splide">
+                                                <div class="splide__track w-100">
+                                                    <ul class="splide__list w-100">
+                                                        <img loading="lazy" class="splide__slide" src="./projects_images/dictionary/Capture1.jpg" alt="Dictionary">
+                                                        <img loading="lazy" class="splide__slide" src="./projects_images/dictionary/Capture2.jpg" alt="Dictionary">
+                                                        <img loading="lazy" class="splide__slide" src="./projects_images/dictionary/Capture3.jpg" alt="Dictionary">
+                                                    </ul>
+                                                </div>
+                                            </div>
+                                        <!--x----- carousel--------x--> 
+                                        <div class="modal-body">
+                                            <div class="d-flex flex-wrap-wrap flex-column justify-content-center align-items-center">
+                                                    <div class="d-flex mb-2">
+                                                    <a class="btn btn-outline-primary" href="https://idictionary.netlify.app" target="_blank" style="margin-right:20px;">Visit App</a> 
+                                                    <!-- <a class="btn btn-outline-primary" href="https://github.com/Mahmoud-farargy/calculator/tree/master/calculator" target="_blank"><i class="fas fa-external-link-alt"></i> Code..</a> -->
+                                                    </div>                                                 
+
+                                            </div>
+                                        </div>
+                                        <div class="modal-footer py-2">
+                                        <button class="btn btn-info" data-dismiss="modal">Close</button>
+                                        </div>
+                                </div>
+                            </div>
+                        </div> 
+                    <!-- vue appchirp -->
+                    <div class="modal fade" id="appChirp">
+                            <div class="modal-dialog modal-md">
+                                <div class="modal-content">
+                                    <div class="modal-header">
+                                        <h5 class="modal-title"> 13+ Useful Tools All In One App </h5>
+                                        <span class="close ml-auto" data-dismiss="modal">&times;</span>
+                                    </div>
+                                        <!--------- carousel------------>
+                                            <div class="appchirpCarousel splide">
+                                                <div class="splide__track w-100">
+                                                    <ul class="splide__list w-100">
+                                                        <img loading="lazy" class="splide__slide" src="./projects_images/appchirp/Capture1.png" alt="Appchirp">
+                                                        <img loading="lazy" class="splide__slide" src="./projects_images/appchirp/Capture2.png" alt="Appchirp">
+                                                        <img loading="lazy" class="splide__slide" src="./projects_images/appchirp/Capture3.jpg" alt="Appchirp">
+                                                        <img loading="lazy" class="splide__slide" src="./projects_images/appchirp/Capture4.jpg" alt="Appchirp">
+                                                        <img loading="lazy" class="splide__slide" src="./projects_images/appchirp/Capture5.png" alt="Appchirp">
+                                                    </ul>
+                                                </div>
+                                            </div>
+                                        <!--x----- carousel--------x-->  
+                                        <div class="modal-body">
+                                            <div class="d-flex flex-wrap-wrap flex-column justify-content-center align-items-center">
+                                                  <div class="d-flex mb-2">
+                                                        <a class="btn btn-outline-primary" href="./appchirp/index.html" target="_blank" style="margin-right:20px;">Visit App</a> 
+                                                        <a class="btn btn-outline-primary" href="https://github.com/Mahmoud-farargy/calculator/tree/master/calculator" target="_blank"><i class="fas fa-external-link-alt"></i> Code..</a>
+                                                    </div>                                                 
+
+                                            </div>
+                                        </div>
+                                        <div class="modal-footer py-2">
+                                        <button class="btn btn-info" data-dismiss="modal">Close</button>
+                                        </div>
+                                </div>
+                            </div>
+                        </div> 
+                    <!-- netflix -->
+                    <div class="modal fade" id="netflix">
+                            <div class="modal-dialog modal-md">
+                                <div class="modal-content">
+                                    <div class="modal-header">
+                                        <h5 class="modal-title">Netflix Clone </h5>
+                                        <span class="close ml-auto" data-dismiss="modal">&times;</span>
+                                    </div>
+                                        <!--------- carousel------------>
+                                            <div class="netflixCarousel splide">
+                                                <div class="splide__track w-100">
+                                                    <ul class="splide__list w-100">
+                                                        <img loading="lazy" class="splide__slide" src="./projects_images/netflix-clone/Capture1.png" alt="Netflix">
+                                                        <img loading="lazy" class="splide__slide" src="./projects_images/netflix-clone/Capture2.png" alt="Netflix">
+                                                        <img loading="lazy" class="splide__slide" src="./projects_images/netflix-clone/Capture3.png" alt="Netflix">
+                                                        <img loading="lazy" class="splide__slide" src="./projects_images/netflix-clone/Capture4.png" alt="Netflix">
+                                                        <img loading="lazy" class="splide__slide" src="./projects_images/netflix-clone/Capture5.png" alt="Netflix">
+                                                    </ul>
+                                                </div>
+                                            </div>
+                                        <!--x----- carousel--------x-->  
+                                        <div class="modal-body">
+                                            <div class="d-flex flex-wrap-wrap flex-column justify-content-center align-items-center">
+                                                    <div class="d-flex my-2">
+                                                            <a class="btn btn-outline-primary" href="https://netflixwebclone.netlify.app" target="_blank" style="margin-right:20px">Visit Site</a>
+                                                            <a class="btn btn-outline-primary" href="https://github.com/Mahmoud-farargy/netflix-clone" target="_blank"><i class="fas fa-external-link-alt"></i> Code..</a>
+                                                    </div>                                                
+
+                                            </div>
+                                        </div>
+                                        <div class="modal-footer py-2">
+                                        <button class="btn btn-info" data-dismiss="modal">Close</button>
+                                        </div>
+                                </div>
+                            </div>
+                    </div> 
+                    <!-- react hotel resort -->
+                    <div class="modal fade" id="hotelResort">
+                            <div class="modal-dialog modal-md">
+                                <div class="modal-content">
+                                    <div class="modal-header">
+                                        <h5 class="modal-title"> Hotel Reservation Site </h5>
+                                        <span class="close ml-auto" data-dismiss="modal">&times;</span>
+                                    </div>
+                                        <!--------- carousel------------>
+                                            <div class="hotelResortCarousel splide">
+                                                <div class="splide__track w-100">
+                                                    <ul class="splide__list w-100">
+                                                        <img loading="lazy" class="splide__slide" src="./projects_images/summer-resort/Capture1.jpg" alt="Hotel Resort">
+                                                        <img loading="lazy" class="splide__slide" src="./projects_images/summer-resort/Capture2.jpg" alt="Hotel Resort">
+                                                        <img loading="lazy" class="splide__slide" src="./projects_images/summer-resort/Capture3.jpg" alt="Hotel Resort">
+                                                        <img loading="lazy" class="splide__slide" src="./projects_images/summer-resort/Capture4.jpg" alt="Hotel Resort">
+                                                        <img loading="lazy" class="splide__slide" src="./projects_images/summer-resort/Capture5.jpg" alt="Hotel Resort">
+                                                        <img loading="lazy" class="splide__slide" src="./projects_images/summer-resort/Capture6.jpg" alt="Hotel Resort">
+                                                    </ul>
+                                                </div>
+                                            </div>
+                                        <!--x----- carousel--------x-->  
+                                        <div class="modal-body">
+                                            <div class="d-flex flex-wrap-wrap flex-column justify-content-center align-items-center">
+                                                  <div class="d-flex my-2">
+                                                        <a class="btn btn-outline-primary" href="https://summerresort.netlify.app" target="_blank" style="margin-right:20px;">Visit Site</a>
+                                                        <a class="btn btn-outline-primary" href="https://github.com/Mahmoud-farargy/summerresort/tree/master/Beach-Resort" target="_blank"><i class="fas fa-external-link-alt"></i>See Code..</a>
+                                                  </div>                                               
+
+                                            </div>
+                                        </div>
+                                        <div class="modal-footer py-2">
+                                        <button class="btn btn-info" data-dismiss="modal">Close</button>
+                                        </div>
+                                </div>
+                            </div>
+                    </div> 
+                    <!-- react burger builder -->
+                        <div class="modal fade" id="burgerBuilder">
+                                <div class="modal-dialog modal-md">
+                                    <div class="modal-content">
+                                        <div class="modal-header">
+                                            <h5 class="modal-title"> Burger Builder </h5>
+                                            <span class="close ml-auto" data-dismiss="modal">&times;</span>
+                                        </div>
+                                        <!--------- carousel------------>
+                                            <div class="burgerioCarousel splide">
+                                                <div class="splide__track w-100">
+                                                    <ul class="splide__list w-100">
+                                                        <img loading="lazy" class="splide__slide" src="./projects_images/burger-builder/Capture1.png" alt="Burger builder">
+                                                        <img loading="lazy" class="splide__slide" src="./projects_images/burger-builder/Capture2.png" alt="Burger builder">
+                                                        <img loading="lazy" class="splide__slide" src="./projects_images/burger-builder/Capture3.png" alt="Burger builder">
+                                                        <img loading="lazy" class="splide__slide" src="./projects_images/burger-builder/Capture4.png" alt="Burger builder">
+                                                    </ul>
+                                                </div>
+                                            </div>
+                                        <!--x----- carousel--------x-->  
+                                            <div class="modal-body">
+                                                <div class="d-flex flex-wrap-wrap flex-column justify-content-center align-items-center">
+                                                    <div class="d-flex mt-2 mb-3">
+                                                        <a class="btn btn-outline-primary" href="https://burgerio.netlify.app" target="_blank" style="margin-right:20px;">Visit App</a> <br>
+                                                        <a class="btn btn-outline-primary" href="https://github.com/Mahmoud-farargy/Burgerio" target="_blank"><i class="fas fa-external-link-alt"></i>See Code..</a>
+                                                    </div>                                              
+
+                                                </div>
+                                            </div>
+                                            <div class="modal-footer py-2">
+                                            <button class="btn btn-info" data-dismiss="modal">Close</button>
+                                            </div>
+                                    </div>
+                                </div>
+                        </div> 
+                    <!-- react typing speed test -->
+                     <div class="modal fade" id="wordBeater">
+                                <div class="modal-dialog modal-md">
+                                    <div class="modal-content">
+                                        <div class="modal-header">
+                                            <h5 class="modal-title"> Typing Speed App </h5>
+                                            <span class="close ml-auto" data-dismiss="modal">&times;</span>
+                                        </div>
+                                        <!--------- carousel------------>
+                                            <div class="wordBeaterCarousel splide">
+                                                <div class="splide__track w-100">
+                                                    <ul class="splide__list w-100">
+                                                        <img loading="lazy" class="splide__slide" src="./projects_images/speed-test/Capture1.jpg" alt="Typing speed app">
+                                                        <img loading="lazy" class="splide__slide" src="./projects_images/speed-test/Capture2.jpg" alt="Typing speed app">
+                                                        <img loading="lazy" class="splide__slide" src="./projects_images/speed-test/Capture3.jpg" alt="Typing speed app">
+                                                        <img loading="lazy" class="splide__slide" src="./projects_images/speed-test/Capture4.jpg" alt="Typing speed app">
+                                                    </ul>
+                                                </div>
+                                            </div>
+                                        <!--x----- carousel--------x--> 
+                                            <div class="modal-body">
+                                                <div class="d-flex flex-wrap-wrap flex-column justify-content-center align-items-center">
+                                                   <div class="d-flex mt-2 mb-3">
+                                                        <a class="btn btn-outline-primary" href="https://wbeater.netlify.app" target="_blank" style="margin-right:20px;">Visit App</a>
+                                                        <a class="btn btn-outline-primary" href="https://github.com/Mahmoud-farargy/Speed-typing-game" target="_blank"><i class="fas fa-external-link-alt"></i>See Code..</a>
+                                                    </div>                                             
+
+                                                </div>
+                                            </div>
+                                            <div class="modal-footer py-2">
+                                            <button class="btn btn-info" data-dismiss="modal">Close</button>
+                                            </div>
+                                    </div>
+                                </div>
+                        </div>
+                        <!-- react amazon clone -->
+                        <div class="modal fade" id="amazonClone">
+                                <div class="modal-dialog modal-md">
+                                    <div class="modal-content">
+                                        <div class="modal-header">
+                                            <h5 class="modal-title"> Amazon Clone </h5>
+                                            <span class="close ml-auto" data-dismiss="modal">&times;</span>
+                                        </div>                          
+                                        <!--------- carousel------------>
+                                            <div class="amazonCarousel splide">
+                                                <div class="splide__track w-100">
+                                                    <ul class="splide__list w-100">
+                                                        <img loading="lazy" class="splide__slide" src="./projects_images/amazon-clone/Capture1.jpg" alt="Amazon Clone">
+                                                        <img loading="lazy" class="splide__slide" src="./projects_images/amazon-clone/Capture2.jpg" alt="Amazon Clone">
+                                                        <img loading="lazy" class="splide__slide" src="./projects_images/amazon-clone/Capture3.jpg" alt="Amazon Clone">
+                                                        <img loading="lazy" class="splide__slide" src="./projects_images/amazon-clone/Capture4.jpg" alt="Amazon Clone">
+                                                        <img loading="lazy" class="splide__slide" src="./projects_images/amazon-clone/Capture5.jpg" alt="Amazon Clone">
+                                                        <img loading="lazy" class="splide__slide" src="./projects_images/amazon-clone/Capture6.jpg" alt="Amazon Clone">
+                                                    </ul>
+                                                </div>
+                                            </div>
+                                        <!--x----- carousel--------x--> 
+                                            <div class="modal-body">
+                                                <div class="d-flex flex-wrap-wrap flex-column justify-content-center align-items-center">
+                                                    <div class="text-overlay">
+                                                        <h5 class='text-center'>Description</h5>
+                                                            <p>A site that's similar to Amazon where users can browse products, add some of them to the shopping cart, and purchase items in the Cart with Paypal.</p>
+                                                    </div>
+                                                    <div class="d-flex mt-2 mb-3">
+                                                        <a class="btn btn-outline-primary" href="https://amazonstore.netlify.app" target="_blank" style="margin-right:20px;">Visit Site</a>
+                                                        <a class="btn btn-outline-primary" href="https://github.com/Mahmoud-farargy/amazonclone" target="_blank"><i class="fas fa-external-link-alt mr-2"></i>See Code..</a>
+                                                    </div>                                             
+
+                                                </div>
+                                            </div>
+                                            <div class="modal-footer py-2">
+                                            <button class="btn btn-info" data-dismiss="modal">Close</button>
+                                            </div>
+                                    </div>
+                                </div>
+                        </div>
+                        <!-- bootstrap splendify -->
+                        <div class="modal fade" id="splendify">
+                                <div class="modal-dialog modal-md">
+                                    <div class="modal-content">
+                                        <div class="modal-header">
+                                            <div class="header-box">
+                                                <h5 class="modal-title"> Splendify </h5>
+                                                <span class="badge badge-primary ml-2">UI</span>
+                                            </div>
+                                            <span class="close ml-auto" data-dismiss="modal">&times;</span>
+                                        </div>
+                                        <!--------- carousel------------>
+                                            <div class="splendifyCarousel splide">
+                                                <div class="splide__track w-100">
+                                                    <ul class="splide__list w-100">
+                                                        <img loading="lazy" class="splide__slide" src="./projects_images/splendify/Capture1.jpg" alt="Splendify">
+                                                        <img loading="lazy" class="splide__slide" src="./projects_images/splendify/Capture2.jpg" alt="Splendify">
+                                                    </ul>
+                                                </div>
+                                            </div>
+                                        <!--x----- carousel--------x--> 
+                                            <div class="modal-body">
+                                                <div class="d-flex flex-wrap-wrap flex-column justify-content-center align-items-center">
+                                                   <div class="d-flex mt-2 mb-3">
+                                                        <div class="d-flex mb-2">
+                                                            <a class="btn btn-outline-primary" href="./splendify/index.html" target="_blank" style="margin-right:20px">Visit Site</a> 
+                                                            <a class="btn btn-outline-primary" href="https://github.com/Mahmoud-farargy/bootstrap-project-3/tree/master/glozzom" target="_blank"><i class="fas fa-external-link-alt"></i> Code..</a>
+                                                        </div>                                        
+
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="modal-footer py-2">
+                                                <button class="btn btn-info" data-dismiss="modal">Close</button>
+                                            </div>
+                                </div>
+                        </div>
+                    </div>
+                        <!-- CSS travia -->
+                        <div class="modal fade" id="travia">
+                                <div class="modal-dialog modal-md">
+                                    <div class="modal-content">
+                                        <div class="modal-header">
+                                            <div class="header-box">
+                                                <h5 class="modal-title"> Travia </h5>
+                                                <span class="badge badge-primary ml-2">UI</span>
+                                            </div>
+                                            <span class="close ml-auto" data-dismiss="modal">&times;</span>
+                                        </div>
+                                        <!--------- carousel------------>
+                                            <div class="traviaCarousel splide">
+                                                <div class="splide__track w-100">
+                                                    <ul class="splide__list w-100">
+                                                        <img loading="lazy" class="splide__slide" src="./projects_images/travia/Capture1.jpg" alt="Travia">
+                                                        <img loading="lazy" class="splide__slide" src="./projects_images/travia/Capture2.jpg" alt="Travia">
+                                                        <img loading="lazy" class="splide__slide" src="./projects_images/travia/Capture3.jpg" alt="Travia">
+                                                        <img loading="lazy" class="splide__slide" src="./projects_images/travia/Capture4.jpg" alt="Travia">
+                                                        <img loading="lazy" class="splide__slide" src="./projects_images/travia/Capture5.jpg" alt="Travia">
+                                                    </ul>
+                                                </div>
+                                            </div>
+                                        <!--x----- carousel--------x--> 
+                                            <div class="modal-body">
+                                                <div class="d-flex flex-wrap-wrap flex-column justify-content-center align-items-center">
+                                                   <div class="d-flex mt-2 mb-3">
+                                                        <div class="d-flex my-2">
+                                                            <a class="btn btn-outline-primary" href="https://travia.netlify.app" target="_blank" style="margin-right:20px">Visit Site</a> 
+                                                            <a class="btn btn-outline-primary" href="https://github.com/Mahmoud-farargy/Travia" target="_blank"><i class="fas fa-external-link-alt"></i> Code..</a>   
+                                                        </div>                                      
+
+                                                </div>
+                                            </div>
+                                        </div>
+                                            <div class="modal-footer py-2">
+                                            <button class="btn btn-info" data-dismiss="modal">Close</button>
+                                            </div>
+                                    </div>
+                            </div>
+                        </div>
+                        <!-- bootstrap mizuxe -->
+                        <div class="modal fade" id="mizuxe">
+                                <div class="modal-dialog modal-md">
+                                    <div class="modal-content">
+                                        <div class="modal-header">
+                                            <div class="header-box">
+                                                <h5 class="modal-title"> Mizuxe </h5>
+                                                <span class="badge badge-primary ml-2">UI</span>  
+                                            </div>
+                                           
+                                            <span class="close ml-auto" data-dismiss="modal">&times;</span>
+                                        </div>
+                                        <!--------- carousel------------>
+                                            <div class="mizuxeCarousel splide">
+                                                <div class="splide__track w-100">
+                                                    <ul class="splide__list w-100">
+                                                        <img loading="lazy" class="splide__slide" src="./projects_images/mizuxe/Capture1.jpg" alt="Mizuxe">
+                                                        <img loading="lazy" class="splide__slide" src="./projects_images/mizuxe/Capture2.jpg" alt="Mizuxe">
+                                                    </ul>
+                                                </div>
+                                            </div>
+                                        <!--x----- carousel--------x-->     
+                                        
+                                            <div class="modal-body">
+                                                <div class="d-flex flex-wrap-wrap flex-column justify-content-center align-items-center">
+                                                   <div class="d-flex mt-2 mb-3">
+                                                       <div class="d-flex my-2">
+                                                            <a class="btn btn-outline-primary" href="./mizuxe/index.html" target="_blank" style="margin-right:20px">Visit Site</a>
+                                                            <a class="btn btn-outline-primary" href="https://github.com/Mahmoud-farargy/Bootstrap-Project-2/tree/master/Mizuxe%20(Bootstrap)" target="_blank"><i class="fas fa-external-link-alt"></i> Code..</a>
+                                                        </div>                                
+
+                                                </div>
+                                            </div>
+                                        </div>
+                                            <div class="modal-footer py-2">
+                                            <button class="btn btn-info" data-dismiss="modal">Close</button>
+                                            </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- bootstrap blogen -->
+                        <div class="modal fade" id="blogen">
+                                <div class="modal-dialog modal-md">
+                                    <div class="modal-content">
+                                        <div class="modal-header">
+                                            <div class="header-box">
+                                                <h5 class="modal-title"> Blogen </h5>
+                                                <span class="badge badge-primary ml-2 mt-2">UI</span>  
+                                            </div>
+                                            <span class="close ml-auto" data-dismiss="modal">&times;</span>
+                                        </div>
+                                        <!--------- carousel------------>
+                                            <div class="blogenCarousel splide">
+                                                <div class="splide__track w-100">
+                                                    <ul class="splide__list w-100">
+                                                        <img loading="lazy" class="splide__slide" src="./projects_images/blogen/Capture1.jpg" alt="Blogen">
+                                                        <img loading="lazy" class="splide__slide" src="./projects_images/blogen/Capture2.jpg" alt="Blogen">
+                                                    </ul>
+                                                </div>
+                                            </div>
+                                        <!--x----- carousel--------x-->  
+                                            <div class="modal-body">
+                                                <div class="d-flex flex-wrap-wrap flex-column justify-content-center align-items-center">
+                                                   <div class="d-flex mt-2 mb-3">
+                                                        <div class="d-flex my-2">
+                                                                <a class="btn btn-outline-primary" href="./blogen/index.html" target="_blank" style="margin-right:20px">Visit Site</a>
+                                                                <a class="btn btn-outline-primary" href="https://github.com/Mahmoud-farargy/Bootstrap-project-4/tree/master/my%20blogen" target="_blank"><i class="fas fa-external-link-alt"></i> Code..</a>
+                                                        </div>                            
+
+                                                </div>
+                                            </div>
+                                        </div>
+                                            <div class="modal-footer py-2">
+                                            <button class="btn btn-info" data-dismiss="modal">Close</button>
+                                            </div>
+                                </div>
+                            </div>
+                        </div>
+                            <!-- css xypo -->
+                            <div class="modal fade" id="xypo">
+                                <div class="modal-dialog modal-md">
+                                    <div class="modal-content">
+                                        <div class="modal-header">
+                                            <div class="header-box">
+                                                    <h5 class="modal-title"> Xypo </h5>
+                                                    <span class="badge badge-primary ml-2 mt-2">UI</span>  
+                                            </div>
+
+                                            <span class="close ml-auto" data-dismiss="modal">&times;</span>
+                                        </div>
+                                        <!--------- carousel------------>
+                                            <div class="xypoCarousel splide">
+                                                <div class="splide__track w-100">
+                                                    <ul class="splide__list w-100">
+                                                        <img loading="lazy" class="splide__slide" src="./projects_images/xypo/Capture1.jpg" alt="Xypo">
+                                                        <img loading="lazy" class="splide__slide" src="./projects_images/xypo/Capture2.jpg" alt="Xypo">
+                                                    </ul>
+                                                </div>
+                                            </div>
+                                        <!--x----- carousel--------x-->  
+                                            <div class="modal-body">
+                                                <div class="d-flex flex-wrap-wrap flex-column justify-content-center align-items-center">
+                                                    <div class="d-flex my-2">
+                                                        <a class="btn btn-outline-primary" href="https://xypo-m.netlify.app" target="_blank" style="margin-right:20px">Visit Site</a>
+                                                        <a class="btn btn-outline-primary" href="https://github.com/Mahmoud-farargy/Xypo" target="_blank"><i class="fas fa-external-link-alt"></i> Code..</a>
+                                                    </div>                                              
+
+                                                </div>
+                                            </div>
+                                            <div class="modal-footer py-2">
+                                            <button class="btn btn-info" data-dismiss="modal">Close</button>
+                                            </div>
+                                    </div>
+                                </div>
+                        </div>
+
+                    <!-- SoundCloud -->
+                     <div class="modal fade" id="SoundCloudApp">
+                                <div class="modal-dialog modal-md">
+                                    <div class="modal-content">
+                                        <div class="modal-header">
+                                            
+                                            <h5 class="modal-title">Soundcloud App</h5>
+                                            <span class="close ml-auto" data-dismiss="modal">&times;</span>
+                                        </div>
+                                            <!--------- carousel------------>
+                                            <div class="soundcloudCarousel splide">
+                                                    <div class="splide__track w-100">
+                                                        <ul class="splide__list w-100">
+                                                            <img loading="lazy" class="splide__slide" src="./projects_images/soundcloud/Capture1.png" alt="Soundcloud">
+                                                            <img loading="lazy" class="splide__slide" src="./projects_images/soundcloud/Capture2.png" alt="Soundcloud">
+                                                            <img loading="lazy" class="splide__slide" src="./projects_images/soundcloud/Capture3.png" alt="Soundcloud">
+                                                        </ul>
+                                                    </div>
+                                                </div>
+                                            <!--x----- carousel--------x--> 
+                                            <div class="modal-body">
+                                                <div class="d-flex flex-wrap-wrap flex-column justify-content-center align-items-center">
+                                                    <div class="d-flex my-2">
+                                                        <a class="btn btn-outline-primary" href="https://soundcloud-redux.herokuapp.com" target="_blank" style="margin-right:20px">Visit App</a>
+                                                    </div>                                              
+                                                </div>
+                                            </div>
+                                            <div class="modal-footer py-2">
+                                            <button class="btn btn-info" data-dismiss="modal">Close</button>
+                                            </div>
+                                    </div>
+                                </div>
+                            </div>    
+
+                            <!-- Spotify-- -->
+                    <div class="modal fade" id="spotifyClone">
+                        <div class="modal-dialog modal-md">
+                            <div class="modal-content">
+                                <div class="modal-header">
+                                    <h5 class="modal-title">Advanced Spotify Clone</h5>
+                                   
+                                    <span class="close ml-auto" data-dismiss="modal">&times;</span>
+                                </div>
+                     <!--------- carousel------------>
+                        <div class="spotifyCarousel splide">
+                            <div class="splide__track w-100">
+                                <ul class="splide__list w-100">
+                                    <img loading="lazy" class="splide__slide" src="./projects_images/spotify-clone/Capture1.jpg" alt="Spotify clone">
+                                    <img loading="lazy" class="splide__slide" src="./projects_images/spotify-clone/Capture2.jpg" alt="Spotify clone">
+                                    <img loading="lazy" class="splide__slide" src="./projects_images/spotify-clone/Capture3.jpg" alt="Spotify clone">
+                                    <img loading="lazy" class="splide__slide" src="./projects_images/spotify-clone/Capture4.jpg" alt="Spotify clone">
+                                    <img loading="lazy" class="splide__slide" src="./projects_images/spotify-clone/Capture5.jpg" alt="Spotify clone">
+                                    <img loading="lazy" class="splide__slide" src="./projects_images/spotify-clone/Capture6.jpg" alt="Spotify clone">
+                                    <img loading="lazy" class="splide__slide" src="./projects_images/spotify-clone/Capture7.jpg" alt="Spotify clone">
+                                    <img loading="lazy" class="splide__slide" src="./projects_images/spotify-clone/Capture8.jpg" alt="Spotify clone">
+                                    <img loading="lazy" class="splide__slide" src="./projects_images/spotify-clone/Capture9.jpg" alt="Spotify clone">
+                                    <img loading="lazy" class="splide__slide" src="./projects_images/spotify-clone/Capture10.jpg" alt="Spotify clone">
+                                    <img loading="lazy" class="splide__slide" src="./projects_images/spotify-clone/Capture11.jpg" alt="Spotify clone">
+                                    <img loading="lazy" class="splide__slide" src="./projects_images/spotify-clone/Capture12.jpg" alt="Spotify clone">
+                                    <img loading="lazy" class="splide__slide" src="./projects_images/spotify-clone/Capture13.jpg" alt="Spotify clone">
+                                </ul>
+                            </div>
+                        </div>
+                    <!--x----- carousel--------x-->    
+                                    <div class="modal-body">
+                                    <div class="text-overlay">
+                                        <h5 class='text-center'>Description</h5>
+                                        <p>An application that is similar to Spotify where
+                                            users can play millions of songs, search for a
+                                            specific song, album, or artist, get access to and
+                                            play their own Spotify playlist, get song lyrics, and
+                                            more.                                            
+                                            </p>
+                                    </div>
+                                        <div class="d-flex flex-wrap-wrap flex-column justify-content-center align-items-center">
+                                            <div class="d-flex mt-2 mb-3">
+                                                 <div class="d-flex my-2">
+                                                         <a class="btn btn-outline-primary" href="https://spotifyappclone.netlify.app" target="_blank" style="margin-right:20px">Visit App</a>
+                                                         <a class="btn btn-outline-primary" href="https://github.com/Mahmoud-farargy/spotify-clone" target="_blank"><i class="fas fa-external-link-alt"></i> Code..</a>
+                                                 </div>                            
+
+                                             </div>
+                                         </div>
+                                    </div>
+                                    <div class="modal-footer py-2">
+                                        <button class="btn btn-info" data-dismiss="modal">Close</button>
+                                    </div>
+                            </div>
+                        </div>    
+                </div>
+                   <!-- Instagram -->
+                   <div class="modal fade" id="instaClone">
+                    <div class="modal-dialog modal-md">
+                        <div class="modal-content">
+                            <div class="modal-header">
+                                <h5 class="modal-title">Full Advanced Instagram Clone</h5>
+                                <span class="close ml-auto" data-dismiss="modal">&times;</span>
+                            </div>
+                    <!--------- carousel------------>
+                        <div class="instagramCarousel splide">
+                            <div class="splide__track w-100">
+                                <ul class="splide__list w-100">
+                                    <img loading="lazy" class="splide__slide" src="./projects_images/instagram-clone/Capture1.png" alt="Instagram clone">
+                                    <img loading="lazy" class="splide__slide" src="./projects_images/instagram-clone/Capture2.png" alt="Instagram clone">
+                                    <img loading="lazy" class="splide__slide" src="./projects_images/instagram-clone/Capture3.png" alt="Instagram clone">
+                                    <img loading="lazy" class="splide__slide" src="./projects_images/instagram-clone/Capture4.png" alt="Instagram clone">
+                                    <img loading="lazy" class="splide__slide" src="./projects_images/instagram-clone/Capture5.png" alt="Instagram clone">
+                                    <img loading="lazy" class="splide__slide" src="./projects_images/instagram-clone/Capture6.png" alt="Instagram clone">
+                                    <img loading="lazy" class="splide__slide" src="./projects_images/instagram-clone/Capture7.png" alt="Instagram clone">
+                                    <img loading="lazy" class="splide__slide" src="./projects_images/instagram-clone/Capture8.png" alt="Instagram clone">
+                                </ul>
+                            </div>
+                        </div>
+                    <!--x----- carousel--------x-->
+                                <div class="modal-body">
+                                        <div class="text-overlay">
+                                                <h5 class='text-center'>Description</h5>
+                                        <p>A social media platform similar to Instagram where people can connect and communicate.</p>
+                                                <h5 class='text-center'>Features</h5>
+                                        <ul class="bullet--1">
+                                            <li><p>Users can sign-in with different methods like Google, Twitter, Github or Email and password</p></li>
+                                            <li><p>Custom feed based on who they follow</p></li>
+                                            <li><p>Profile screen</p>
+                                                <ul class="bullet--2">
+                                                    <li> <p>Follow / unfollow users
+                                                        <ul>
+                                                            <li class="bullet--3"><p>view all followed users on your profile or other's</p></li>
+                                                        </ul>
+                                                        </p>
+                                                    </li>
+                                                    <li><p>Change image view from grid to feed laylout</p></li>
+                                                    <li><p>Edit profile</p>
+                                                            <ul>
+                                                                <li class="bullet--3"><p>Ability to update profile information and avatar picture</p></li>
+                                                                <li class="bullet--3"><p>Manage blocked users</p></li>
+                                                                <li class="bullet--3"><p>Change account's Username and Password</p></li>
+                                                                <li class="bullet--3"><p>Delete account</p></li>
+                                                            </ul>
+                                                        </li>
+                                                    <li><p>Account settings</p></li>
+                                                </ul>
+                                            </li>
+                                            <li><p>Posts</p>
+                                                <ul class="bullet--2">
+                                                    <li><p>Users can post pictures and videos from camera or gallery</p></li>
+                                                    <li><p>Like / dislike posts
+                                                        <ul class="bullet--3">
+                                                            <li><p>View all likes on a post</p></li>
+                                                            <li><p>Nice visual animations when like buttons are triggered</p></li>
+                                                        </ul>
+                                                        </p>
+                                                    </li>
+                                                    <li><p>Comment on posts
+                                                            <ul class="bullet--3">
+                                                                <li><p>Comment or reply on someone else'comment</p></li>
+                                                                <li><p>Like / dislike comments and sub-comments on a post</p></li>
+                                                                <li><p>View all comments on a post</p></li>
+                                                                <li><p>View users who liked a comment</p></li>
+                                                            </ul>
+                                                        </p>
+                                                    </li>
+                                                    <li><p>Delete comments or an entire post only by their owners </p>
+                                                    </li>
+                                                </ul>
+                                            </li>
+
+                                            <li>
+                                                <p>Chat screen</p>
+                                                <ul class="bullet--2">
+                                                    <li><p>Chat with any user</p></li>
+                                                    <li><p>Share images, videos and emojis while chatting</p></li>
+                                                    <li><p>Smart scrolling effect when receiving or sending messages makes them easy to read </p></li>
+                                                </ul>
+                                            </li>
+                                            <li>
+                                                <p>Notification screen</p>
+                                                <ul class="bullet--2">
+                                                    <li><p>Get all updates after you being away from the app
+                                                        <ul class="bullet--3">
+                                                            <li><p>
+                                                                Follow / unfollow users and view a profile directly from the notifications window
+                                                                </p> 
+                                                            </li>
+                                                        </ul>
+                                                        </p>
+                                                    </li>
+                                                </ul>
+                                            </li>
+                                            <li><p>Authentications handling with an ability to retrieve password if it was forgetten</p></li>
+                                            <li><p>Block / unblock users</p></li>
+                                            <li><p>Share video Reels</p></li>
+                                            <li><p>Search users</p></li>
+                                            <li><p>Suggestions list</p></li>
+                                        </ul>
+                                                <h5 class='text-center'>Used technologies</h5>
+                                                <ul class="bullet--1">
+                                                    <li><p>React</p></li>
+                                                    <li><p>Context API</p></li>
+                                                    <li><p>Firebase</p></li>
+                                                    <li><p>jQuery</p></li>
+                                                    <li><p>SCSS</p></li>
+                                                </ul>
+                                        </div>
+                                    <div class="d-flex flex-wrap-wrap flex-column justify-content-center align-items-center">
+                                        <div class="d-flex mt-2 mb-3">
+                                             <div class="d-flex my-2">
+                                                     <a class="btn btn-outline-primary" href="https://voxgram.netlify.app" target="_blank" style="margin-right:20px">Visit App</a>
+                                                     <a class="btn btn-outline-primary" href="https://github.com/Mahmoud-farargy/instagram-clone" target="_blank"><i class="fas fa-external-link-alt"></i> Code..</a>
+                                             </div>                            
+
+                                         </div>
+                                     </div>
+                                </div>
+                                <div class="modal-footer py-2">
+                                    <button class="btn btn-info" data-dismiss="modal">Close</button>
+                                </div>
+                        </div>
+                    </div>    
+            </div>
+            <!-- Google clone -->
+            <div class="modal fade" id="googleClone">
+                <div class="modal-dialog modal-md">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <h5 class="modal-title">Google Search Clone</h5>
+                            <span class="close ml-auto" data-dismiss="modal">&times;</span>
+                        </div>
+                    <!--------- carousel------------>
+                        <div class="googleCarousel splide" id="splide">
+                            <div class="splide__track w-100">
+                                <ul class="splide__list w-100">
+                                    <img loading="lazy" class="splide__slide" src="./projects_images/google-clone/Capture1.png" alt="Google Clone">
+                                    <img loading="lazy" class="splide__slide" src="./projects_images/google-clone/Capture2.png" alt="Google Clone">
+                                    <img loading="lazy" class="splide__slide" src="./projects_images/google-clone/Capture3.png" alt="Google Clone">
+                                </ul>
+                            </div>
+                        </div>
+                    <!--x----- carousel--------x-->
+                            <div class="modal-body">
+                                <div class="d-flex flex-wrap-wrap flex-column justify-content-center align-items-center">
+                                    <div class="d-flex mt-2 mb-3">
+                                         <div class="d-flex my-2">
+                                                 <a class="btn btn-outline-primary" href="https://googlesiteclone.netlify.app" target="_blank" style="margin-right:20px">Visit Site</a>
+                                                 <!-- <a class="btn btn-outline-primary" href="https://github.com/Mahmoud-farargy/Bootstrap-project-4/tree/master/my%20blogen" target="_blank"><i class="fas fa-external-link-alt"></i> Code..</a> -->
+                                         </div>                            
+
+                                     </div>
+                                 </div>
+                            </div>
+                            <div class="modal-footer py-2">
+                                <button class="btn btn-info" data-dismiss="modal">Close</button>
+                            </div>
+                    </div>
+                </div>    
+        </div>
+         <!-- Visipoint -->
+         <div class="modal fade" id="visipointApp">
+            <div class="modal-dialog modal-md">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title">Visitor Management System</h5>
+                        <span class="close ml-auto" data-dismiss="modal">&times;</span>
+                    </div>
+                    <!--------- carousel------------>
+                        <div class="visipointCarousel splide">
+                            <div class="splide__track w-100">
+                                <ul class="splide__list w-100">
+                                    <img loading="lazy" class="splide__slide" src="./projects_images/visipoint/Capture1.png" alt="Visipoint">
+                                    <img loading="lazy" class="splide__slide" src="./projects_images/visipoint/Capture2.png" alt="Visipoint">
+                                </ul>
+                            </div>
+                        </div>
+                    <!--x----- carousel--------x-->
+                        <div class="modal-body">
+                            <div class="d-flex flex-wrap flex-column justify-content-center align-items-center">
+                                    <div class="text-overlay">
+                                            <h5 class='text-center'>Description</h5>
+                                            <h6 style="font-weight:600;">The Easy-To-Use Visitor Management System Your Visitors and Staff Will Love</h6>
+                                            <p>Deliver a warm welcome to your visitors from the moment they step through the door. Greet your visitors, staff and contractors with a modern sign-in system that provides photo ID, up-to-date emergency lists and live information on who's signed in.</p>
+                                    </div>
+                                <div class="d-flex mt-2 mb-3">
+                                     <div class="d-flex my-2">
+                                             <a class="btn btn-outline-primary" href="https://xdg.visipoint.net" target="_blank" style="margin-right:20px">Visit App</a>
+                                             <a class="btn btn-outline-primary" href="https://gitlab.com/lamasatech/visipoint-v5-web" target="_blank"><i class="fas fa-external-link-alt"></i> Code..</a>
+                                     </div>                            
+
+                                 </div>
+                             </div>
+                        </div>
+                        <div class="modal-footer py-2">
+                            <button class="btn btn-info" data-dismiss="modal">Close</button>
+                        </div>
+                </div>
+            </div>    
+    </div>
+         <!-- End of projects -->
+                                <!-- FOOTER -->
+        <footer>
+            <ul>
+                
+                <li data-aos="flip-up" data-aos-delay="100" data-aos-once="true" ><a class="codep" title="Codepen" href="https://codepen.io/mahmoud-farargy/pens/public" target="_blank"><i class="fab fa-codepen"></i></a></li>
+                <li data-aos="flip-up" data-aos-delay="200" data-aos-once="true" ><a class="spoti" title="spotify" href="https://app.netlify.com/teams/mahmoud-farargy/sites" target="_blank"><i class="fab fa-spotify"></i></a></li>
+                <li data-aos="flip-up" data-aos-delay="300" data-aos-once="true" ><a class="insta" title="Instagram" href="https://www.instagram.com/codepugilist/" target="_blank"><i class="fab fa-instagram"></i></a></li>
+                <li data-aos="flip-up" data-aos-delay="400" data-aos-once="true" ><a class="fcc"  title="FreeCodeCamp" href="https://www.freecodecamp.org/farargy" target="_blank"><i class="fab fa-free-code-camp"></i></a></li>
+                <li data-aos="flip-up" data-aos-delay="500" data-aos-once="true" ><a class="git" title="Github" href="http://github.com/Mahmoud-farargy" target="_blank"><i class="fab fa-github"></i></a></li>
+            </ul>
+            <a href="#about"><img loading="lazy" src="rocket12.png" class="fa-chevron-circle-up"></a>
+            <div style="height:30px;">
+                <p class="go-up">Beam me up, Scooty!</p>
+            </div>
+            <p class="copyright" style="color:#aaa;" > &copy; <span id="year"></span> designed & created by Mahmoud Farargy.</p>
+        </footer>
+    </div>
+<script>
+//VUE.JS
+new Vue({
+        el: '#app',
+        data: {
+            messageData:{
+                senderName: "",
+                theirEmail: "",
+                theirMessage: "",
+            },
+            isAccordionClicked: false,
+            isAccordionClicked2: false,
+            nameEmpty: false,
+            emailError: false,
+            messageAlert: false,
+            messageEmpty: false,
+            triggerShowMoreBtn: false
+        },
+        methods:{
+            submitForm(e){
+                e.preventDefault();
+                if(this.messageData.senderName.length <= 0){
+                    this.nameEmpty= true;
+                    document.getElementById("nameN").style.border = "1px solid red";
+                }else{
+                    document.getElementById("nameN").style.border = " 1px solid #ccc";
+                    this.nameEmpty =false;
+                }
+                if(this.messageData.theirEmail.length <= 0){
+                    this.emailError= true;
+                    document.getElementById("emailN").style.border = "1px solid red";
+                }else{
+                    document.getElementById("emailN").style.border = "1px solid #ccc";
+                    this.emailError =false;
+                }
+                if(this.messageData.theirMessage.length < 10){
+                    this.messageEmpty= true;
+                    document.getElementById("messageN").style.border = "1px solid red";
+                }else{
+                    document.getElementById("messageN").style.border = "1px solid #ccc";
+                    this.messageEmpty = false;
+                }
+                if(this.messageData.senderName.length != 0 && this.messageData.theirEmail.length != 0 && this.messageData.theirMessage.length > 10){
+                    
+                        
+                        this.$http.post("https://mahmoudvue.firebaseio.com/portfolio.json", this.messageData)
+                        .then(response =>{
+                            return response.json();
+                            
+                        }).then(data=>{
+                            this.showMessageAlert();
+                        }).catch(error =>{
+                            document.getElementById("logError").innerHTML = `
+                            <div class="alert alert-danger text-center">
+                            <p>${error}</p>
+                            </div>
+                            `;
+                            console.error(error);
+                        });
+                        
+                        $("#contactModal").modal("hide");
+                        
+                        this.$http.post("https://mahmoudvue.firebaseio.com/portfolio.json", this.messageData)
+                        .then(response =>{
+                            return response.json();
+                            
+                        }).then(data=>{
+                            console.log(this.messageData);
+                        });
+                        
+                        $("#contactModal").modal("hide");
+                      
+                        this.$http.post("https://mahmoudvue.firebaseio.com/portfolio.json", this.messageData)
+                        .then(response =>{
+                            return response.json();
+                            
+                        }).then(data=>{
+                            console.log(this.messageData);
+                        });
+                        
+                        $("#contactModal").modal("hide");
+                    
+                    
+                }
+                       
+                
+            },
+            showMessageAlert(){
+              
+               var showingPeriod = 5;
+               var messageInterval = setInterval(()=>{
+                    showingPeriod--;
+                    if(showingPeriod > 0){
+                        document.getElementById("messageAlert").style.display= "block";
+                    }else{
+                        document.getElementById("messageAlert").style.display = "none";
+                    }
+                    if(showingPeriod <= 0){
+                        clearInterval(messageInterval);
+                }
+                   
+                },1000);
+
+                
+               document.getElementById("resetForm").reset();
+            }
+        }
+        
+    });
+        //END-VUE
+                const nightDayCheckbox = document.querySelector(".checkbox");
+                            nightDayCheckbox.addEventListener("change", function(){
+                                //changes the theme of the website
+                            document.body.classList.toggle("blackTheme");
+                });
+
+                var filterToolbarBtns = document.querySelector("#filterToolbar").children;
+                    var filterItems = document.querySelector(".portfolio-items").children;
+                var autoScrollId = document.getElementById("autoScroll");
+                    
+                    for(let i= 0; i< filterToolbarBtns.length; i++){
+                        filterToolbarBtns[i].addEventListener("click", function(){
+                            setTimeout(() =>{
+                                    autoScrollId && autoScrollId.scrollIntoViewIfNeeded({behavior: "smooth", block: "start"});
+                            }, 500);
+                           
+                            for(let j=0 ; j< filterToolbarBtns.length; j++){
+                                filterToolbarBtns[j].classList.remove("active");//removes "active "class from all elements
+                            }
+                            this.classList.add("active");//adds it to the only clicked one
+                            const target = this.getAttribute("data-target");
+
+                            for(let k =0; k <filterItems.length; k++){
+                                filterItems[k].style.display="none";  
+                                if(filterItems[k].getAttribute("data-id") === target){ //checks if each element matches target 
+                                    filterItems[k].style.display = "block";
+                                }
+                                if(target === "all"){ //show all elements if the target is "all"
+                                    filterItems[k].style.display ="block";
+                                }
+                            }
+                        });
+                        
+                    }
+                    for(let g=0; g< filterItems.length; g++){
+                        filterItems[g].addEventListener("mouseover", function(){
+                            this.children[1] ? this.children[1].style.opacity = "1": null;  
+                        })
+                        filterItems[g].addEventListener("mouseout", function(){
+                            this.children[1] ? this.children[1].style.opacity = "0" : null;
+                        })
+                    }
+        </script> 
+        <!-- splide carousel -->
+        <script src="./splideJS-min.js"></script>
+        <!-- popper -->
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49"
+    crossorigin="anonymous"></script>
+    <!-- bootstrap -->
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js" integrity="sha384-smHYKdLADwkXOn1EmN1qk/HfnUcbVRZyYmZ4qpPea6sjB/pTJ0euyQp0Mk8ck+5T"
+    crossorigin="anonymous"></script>
+    <!-- aos -->
+    <script src="./aos.js"></script>
+    <script>
+        AOS.init();
+    </script>
+
+    </body>
+</html>

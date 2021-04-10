@@ -1,0 +1,41 @@
+*{
+    box-sizing:border-box;
+    margin:0;
+}
+ul{
+    list-style:none;
+}
+a,span{
+    text-decoration:none;
+}
+
+.close{
+    cursor:pointer;
+}
+.css-center-pagination{
+    display:flex;
+    justify-content:center;
+    align-items:center;
+}
+@media only screen and (max-width: 600px){
+    .login-card{
+        width:70%;
+    }
+    nav ul li.active{
+    margin-left:6px;
+    padding-left:4px;
+    border-left: 3px solid rgb(173, 173, 240);
+    }
+    .css-table-container{
+        width:100%;
+        overflow-X:scroll;
+    }
+    .modal{
+        overflow-y: scroll;
+    }
+}
+@media only screen and (max-width: 760px){
+    .login-card{
+        width:100%;
+    }
+}
