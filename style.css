@@ -761,6 +761,7 @@ hr{
     border: 2px solid var(--secondaryClr);
     border-top-left-radius:5px;
     border-top-right-radius:5px;
+    background-color: rgba(48, 48, 48, 0.2);
     /* border-image: linear-gradient(45deg,rgb(68, 68, 243),rgb(38, 38, 128)) 0 100% !important; */
 }                     /*====Final Section====*/
 .b-img:hover{
